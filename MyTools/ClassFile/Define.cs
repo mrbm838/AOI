@@ -23,8 +23,13 @@ namespace MyTools
         public static bool b_Client2 = false;
         public static String UserName;//用户名
         public static string imagepath = "D:" + "\\" + "RawSave";
-        //串口
+        /// <summary>
+        /// IO串口
+        /// </summary>
         public static SerialPort sp1 = new SerialPort();
+        /// <summary>
+        /// 扫码枪串口
+        /// </summary>
         public static SerialPort sp2 = new SerialPort();
         public static string[] PortName = new string[2];
         public static int[] PortBaudRate = new int[2];// 600,1200,2400,4800,9600,19200,38400,115200

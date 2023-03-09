@@ -2784,3 +2784,104 @@ E:\1584-001\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.CoreCompileInputs.cache
 E:\1584-001\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.CopyComplete
 E:\1584-001\AOI\AOI\MyTools\obj\Debug\MyTools.exe
 E:\1584-001\AOI\AOI\MyTools\obj\Debug\MyTools.pdb
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\MyTools.exe.config
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\MyTools.exe
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\MyTools.pdb
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CalibFix.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CalibFix.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CalibFixPlus.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Comm.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Comm.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Core.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CorePlus.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Database.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Dimensioning.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Dimensioning.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Display.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.FGGigE.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.PMAlign.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.PMAlign.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ToolGroup.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ToolGroup.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\MvCameraControl.Net.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Interop.Core.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.Core.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\stdole.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.Display.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.Graphic.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ImageProcessing.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ImageFile.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Inspection.Controls.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Inspection.dll
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CalibFix.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CalibFixPlus.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Comm.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Core.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.CorePlus.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Database.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Dimensioning.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Display.Controls.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.FGGigE.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.PMAlign.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ToolGroup.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\MvCameraControl.Net.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.Core.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.Display.Controls.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro3D.Graphic.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ImageProcessing.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.ImageFile.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\bin\Debug\Cognex.VisionPro.Inspection.xml
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.AssemblyReference.cache
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.SuggestedBindingRedirects.cache
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.CameraForm.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.ChangePassword.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.LightSourceControl.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.InspectionForm.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.logon.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.MainForm.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.Properties.Resources.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.SettingForm.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.StartForm.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.Version.resources
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.GenerateResource.cache
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.CoreCompileInputs.cache
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.csproj.CopyComplete
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.exe
+E:\2328-334&407&500\AOI\AOI\MyTools\obj\Debug\MyTools.pdb
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.csproj.AssemblyReference.cache
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.csproj.SuggestedBindingRedirects.cache
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.CameraForm.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.ChangePassword.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.LightSourceControl.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.InspectionForm.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.logon.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.MainForm.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.Properties.Resources.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.SettingForm.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.StartForm.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.Version.resources
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.csproj.GenerateResource.cache
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.csproj.CoreCompileInputs.cache
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.exe
+F:\0308\AOI_Reduce - 副本\MyTools\obj\Debug\MyTools.pdb
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.csproj.AssemblyReference.cache
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.csproj.SuggestedBindingRedirects.cache
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.CameraForm.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.ChangePassword.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.LightSourceControl.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.InspectionForm.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.logon.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.MainForm.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.Properties.Resources.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.SettingForm.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.StartForm.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.Version.resources
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.csproj.GenerateResource.cache
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.csproj.CoreCompileInputs.cache
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.exe
+E:\2328-334&407&500\AOI\AOI_Reduce\MyTools\obj\Debug\MyTools.pdb

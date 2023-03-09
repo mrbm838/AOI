@@ -20,7 +20,7 @@ namespace MyTools
                 form.startForm.showBar(50);
                 Define.ToolBlock[2] = (CogToolBlock)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\Inspections\\TipAOISideCamera.vpp");
                 form.startForm.showBar(70);
-                Define.ToolBlock[3] = (CogToolBlock)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\Inspections\\TipAOIFrontCamera.vpp");
+                //Define.ToolBlock[3] = (CogToolBlock)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\Inspections\\TipAOIFrontCamera.vpp");
                 form.startForm.showBar(80);
 
                 Define.CCD[1] = (CogAcqFifoTool)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\AcqFifoTool\\CCD1AcqFifoTool.vpp");
@@ -29,7 +29,7 @@ namespace MyTools
                 Define.CCD[2] = (CogAcqFifoTool)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\AcqFifoTool\\CCD2AcqFifoTool.vpp");
                 //CCD2LightOFF.Visible = false;
                 form.startForm.showBar(95);
-                Define.CCD[3] = (CogAcqFifoTool)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\AcqFifoTool\\CCD3AcqFifoTool.vpp");
+                //Define.CCD[3] = (CogAcqFifoTool)CogSerializer.LoadObjectFromFile(Application.StartupPath + "\\AcqFifoTool\\CCD3AcqFifoTool.vpp");
                 //CCD3LightOFF.Visible = false;
                 form.startForm.showBar(100);
             }

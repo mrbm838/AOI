@@ -106,7 +106,6 @@ namespace MyTools
             {
                 for (int i = 1; i <= 3; i++)
                 {
-
                     //通道参数处理
                     string CH = "0" + i.ToString();
                     string DA = "00";
@@ -124,8 +123,7 @@ namespace MyTools
                     //数据格式汇总
                     string d = "3D" + "5A" + CH + DA + BCC + "0D";
 
-                    //TCP Client发送
-                    //         myClient1.SendMsg2("3D5A0188E30D");
+                    //TCP Client发送 myClient1.SendMsg2("3D5A0188E30D");
                     myClient1.SendMsg2(d);
                     Thread.Sleep(60);
                 }
@@ -175,7 +173,6 @@ namespace MyTools
                     // richTextBox1.Text = "OPT Failed to create Ethernet connection by IP";
                     richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "OPT Failed to create Ethernet connection by IP！" + "\r\n");
                     richTextBox.ScrollToCaret();
-                    return;
                 }
                 else
                 {
@@ -191,29 +188,29 @@ namespace MyTools
         //开灯
         public static void OPTOpenT()
         {
-            //OPTController.SetIntensity(1, ch1);//设置光源亮度（通道号，光度）214
-            //OPTController.TurnOnChannel(1);
-            //OPTController.SetIntensity(2, ch2);//设置光源亮度（通道号，光度）58
-            //OPTController.TurnOnChannel(2);
+            OPTController.SetIntensity(1, ch1);//设置光源亮度（通道号，光度）214
+            OPTController.TurnOnChannel(1);
+            OPTController.SetIntensity(2, ch2);//设置光源亮度（通道号，光度）58
+            OPTController.TurnOnChannel(2);
         }
         public static void OPTOpenS()
         {
-            //OPTController.SetIntensity(3, ch3);//设置光源亮度（通道号，光度）41
-            //OPTController.TurnOnChannel(3);
-            //OPTController.SetIntensity(4, ch4);//设置光源亮度（通道号，光度）17
-            //OPTController.TurnOnChannel(4);
+            OPTController.SetIntensity(3, ch3);//设置光源亮度（通道号，光度）41
+            OPTController.TurnOnChannel(3);
+            OPTController.SetIntensity(4, ch4);//设置光源亮度（通道号，光度）17
+            OPTController.TurnOnChannel(4);
         }
 
         //关灯
         public static void OPTCloseT()
         {
-            //OPTController.TurnOffChannel(1);
-            //OPTController.TurnOffChannel(2);
+            OPTController.TurnOffChannel(1);
+            OPTController.TurnOffChannel(2);
         }
         public static void OPTCloseS()
         {
-            //OPTController.TurnOffChannel(3);
-            //OPTController.TurnOffChannel(4);
+            OPTController.TurnOffChannel(3);
+            OPTController.TurnOffChannel(4);
         }
         #endregion
     }

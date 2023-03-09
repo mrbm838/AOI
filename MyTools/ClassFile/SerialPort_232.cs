@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -21,7 +22,7 @@ namespace MyTools
             Define.PortDataBits[0] = int.Parse(form.myIniFile.IniReadValue("COM Port1", "DataBits"));
 
             Define.sp1.PortName = Define.PortName[0];//名字
-                                                     //Define.sp1.PortName = "COM7";
+            //Define.sp1.Parity = (Parity)Enum.Parse(typeof(Parity), Define.PortParity[0]);
             if (Define.PortParity[0] == "NONE")  //校验位
             {
                 Define.sp1.Parity = System.IO.Ports.Parity.None;
@@ -70,7 +71,7 @@ namespace MyTools
             {
                 if (!Define.sp1.IsOpen)
                     Define.sp1.Open();
-                m_bisIODLE = true;
+                bIOOpened = true;
                 Define.sp1.Write("Cmd_On_" + Define.绿灯 + "\r\n");
                 Thread.Sleep(100);
                 Define.sp1.Write("Cmd_Off_" + Define.蜂鸣 + "\r\n");
@@ -85,29 +86,25 @@ namespace MyTools
             }
             catch (Exception)
             {
-                m_bisIODLE = false;
+                bIOOpened = false;
                 richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + Define.PortName[0] + "端口不存在或者被占用" + "\r\n");
             }
 
         }
-        public string ReadIOStatus = "";
+
         string ReadIOStatu = "1100000";
         bool Rlarm = false;
         bool qigang = false;
-        public string InputState = "";
-        public bool m_bIOReceive = false;
-        public bool m_bisIODLE = false;
+        public string StrBack = "";
+        public bool m_bIOReceived = false;
+        public bool bIOOpened = false;
         public void sp1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-
-            if (true)
-            {
-                Thread.Sleep(20);
-                string str = Define.sp1.ReadExisting();
-                Define.sp1.DiscardInBuffer();//释放串口数据缓存             
-                InputState = str;
-                m_bIOReceive = true;
-            }
+            Thread.Sleep(20);
+            string str = Define.sp1.ReadExisting();
+            Define.sp1.DiscardInBuffer();//释放串口数据缓存             
+            StrBack = str;
+            m_bIOReceived = true;
         }
 
         #endregion
@@ -173,25 +170,24 @@ namespace MyTools
             {
                 if (!Define.sp2.IsOpen)
                     Define.sp2.Open();
-                m_bisScanDLE = true;
+                bScanOpened = true;
             }
             catch (Exception)
             {
-                m_bisScanDLE = false;
+                bScanOpened = false;
                 richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + Define.PortName[1] + "端口不存在或者被占用" + "\r\n");
             }
         }
-        public string HoldSN = "";
-        public string ProtectSN = "";
-        public bool m_bDataReceive = false;
-        public bool m_bisScanDLE = false;
+        public string strBackSN = "";
+        public bool m_bDataReceived = false;
+        public bool bScanOpened = false;
         public void sp2_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
             Thread.Sleep(20);
             string str2 = Define.sp2.ReadExisting();
             Define.sp2.DiscardInBuffer();//释放串口数据缓存
-            ProtectSN = str2;
-            m_bDataReceive = true;
+            strBackSN = str2;
+            m_bDataReceived = true;
 
         }
         #endregion

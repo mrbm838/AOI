@@ -67,7 +67,7 @@ namespace MyTools
 
 
 
-            if (form.com232.m_bisIODLE)
+            if (form.com232.bIOOpened)
             {
                 Define.sp1.Write("Cmd_On_" + Define.绿灯 + "\r\n");
                 Thread.Sleep(100);
