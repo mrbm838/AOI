@@ -79,6 +79,7 @@ namespace MyTools
             }
             return null;
         }
+
         public void ReadSettings()
         {
             string str = "";

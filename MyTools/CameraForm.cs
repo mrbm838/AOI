@@ -15,18 +15,19 @@ namespace MyTools
     {
         int id;
         Log savelog = new Log();
-        public CameraForm(CogAcqFifoTool camera, int m)
+
+        public CameraForm(CogAcqFifoTool camera, int id)
         {
             InitializeComponent();
             cogAcqFifoEditV21.Subject.Operator = camera.Operator;    
-            id = m;
+            this.id = id;
             Define.trigger = false;
         }
          
         private void Save_btn_Click(object sender, EventArgs e)
         {
             cogAcqFifoEditV21.LocalDisplayVisible = false;
-            CogAcqFifoTool MT = cogAcqFifoEditV21.Subject; ;
+            CogAcqFifoTool MT = cogAcqFifoEditV21.Subject;
 
             switch (id)
             {
@@ -51,8 +52,6 @@ namespace MyTools
                     break;
           
             }
-
-
            // this.Close();
 
         }
@@ -81,9 +80,6 @@ namespace MyTools
             Define.trigger = true;
             Dispose();
         }
-
-
-
 
     }
 }

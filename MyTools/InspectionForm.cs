@@ -16,20 +16,20 @@ namespace MyTools
     {
         int id;
         Log savelog = new Log();
+
         /// <summary>
         /// 加载VPP
         /// </summary>
         /// <param name="MT">vpp</param>
-        /// <param name="m">vpp ID</param>
-
-
-        public InspectionForm(CogToolBlock MT, int m)
+        /// <param name="id">vpp ID</param>
+        public InspectionForm(CogToolBlock MT, int id)
         {
             InitializeComponent();
             cogToolBlockEditV21.Subject = MT;
             // cogToolBlockEditV21.ActiveControl.ContextMenuStrip.Visible = false;
-            id = m;
+            this.id = id;
         }
+
         /// <summary>
         /// 存储
         /// </summary>
@@ -67,13 +67,10 @@ namespace MyTools
                     CogSerializer.SaveObjectToFile(MT, Application.StartupPath + "\\Inspections\\Inspection_6.vpp");
                     savelog.save(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss fff ") + " Save Inspection_6.vpp\r\n");
                     break;
-
                 case 6:
                     CogSerializer.SaveObjectToFile(MT, Application.StartupPath + "\\Inspections\\Inspection_7.vpp");
                     savelog.save(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss fff ") + " Save Inspection_7.vpp\r\n");
                     break;
-
-
                 case 10:
                     CogSerializer.SaveObjectToFile(MT, Application.StartupPath + "\\Calibrations\\TopCalibration.vpp");
                     savelog.save(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss fff ") + " Save TopCalibration.vpp\r\n");
@@ -99,8 +96,6 @@ namespace MyTools
                     savelog.save(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss fff ") + " Save Calibrations_6.vpp\r\n");
                     break;
             }
-
-
             //this.Close();
             GC.Collect();
             Dispose(true);

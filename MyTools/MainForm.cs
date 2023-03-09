@@ -1783,8 +1783,8 @@ namespace MyTools
 
         private void CCD3ConBtn_Click(object sender, EventArgs e)
         {
-            CameraForm form = new CameraForm(Define.CCD[3], 3);
-            form.ShowDialog();
+            //CameraForm form = new CameraForm(Define.CCD[3], 3);
+            //form.ShowDialog();
         }
 
         private void VP1Btn_Click(object sender, EventArgs e)
@@ -1803,9 +1803,9 @@ namespace MyTools
 
         private void VP3Btn_Click(object sender, EventArgs e)
         {
-            InspectionForm form = new InspectionForm(Define.ToolBlock[3], 3);
-            form.ShowDialog();
-            ShowMsg2("CCD3程序保存成功");
+            //InspectionForm form = new InspectionForm(Define.ToolBlock[3], 3);
+            //form.ShowDialog();
+            //ShowMsg2("CCD3程序保存成功");
         }
 
         private void OpenLOGBtn_Click(object sender, EventArgs e)
