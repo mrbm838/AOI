@@ -1,0 +1,15 @@
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Release\SingleAxisMotion.exe.config
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Release\SingleAxisMotion.exe
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Release\SingleAxisMotion.pdb
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Release\clsL_OpenOffice.dll
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Release\MotionBase.dll
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.csproj.AssemblyReference.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.csproj.SuggestedBindingRedirects.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.AxisForm.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\Cowain_Form.FormView.frm_LoadingDlg.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.Properties.Resources.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.csproj.GenerateResource.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.csproj.CoreCompileInputs.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.csproj.CopyComplete
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.exe
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Release\SingleAxisMotion.pdb

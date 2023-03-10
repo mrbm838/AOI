@@ -50,9 +50,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(236, 272);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 25);
+            this.label1.Size = new System.Drawing.Size(127, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Loading......";
+            this.label1.Text = "Loading VPP";
             // 
             // label2
             // 
@@ -92,6 +92,8 @@
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.StartForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

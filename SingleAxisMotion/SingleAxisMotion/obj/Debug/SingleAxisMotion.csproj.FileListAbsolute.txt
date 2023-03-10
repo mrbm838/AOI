@@ -1,0 +1,12 @@
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\bin\Debug\SingleAxisMotion.exe.config
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\bin\Debug\SingleAxisMotion.exe
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\bin\Debug\SingleAxisMotion.pdb
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj.AssemblyReference.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj.SuggestedBindingRedirects.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.AxisForm.resources
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.Properties.Resources.resources
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj.GenerateResource.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj.CoreCompileInputs.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.exe
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.pdb
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj.CopyComplete

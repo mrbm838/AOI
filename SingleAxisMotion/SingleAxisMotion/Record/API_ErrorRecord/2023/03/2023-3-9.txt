@@ -1,0 +1,797 @@
+2023/03/09	15:33:57	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	15:33:57	dllAPI : OpenCard  ,IMC_CloseCard  Fail, NG_Code: 0x80028018
+2023/03/09	15:33:57	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:0
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:0
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:0
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:2
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:2
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:2
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:1
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:1
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:1
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:21
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:21
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:21
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:22
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:22
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:22
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:3
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:3
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:3
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:5
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:5
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:5
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:4
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:4
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:4
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:23
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:23
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:23
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:24
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:24
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:24
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:6
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:6
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:6
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:7
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:7
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:7
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:12
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:12
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:12
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:13
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:13
+2023/03/09	15:33:57	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:13
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:33:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:34:00	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:39	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	15:36:39	dllAPI : OpenCard  ,IMC_CloseCard  Fail, NG_Code: 0x80028018
+2023/03/09	15:36:39	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:0
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:0
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:0
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:2
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:2
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:2
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:1
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:1
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:1
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:21
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:21
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:21
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:22
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:22
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:22
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:3
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:3
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:3
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:5
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:5
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:5
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:4
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:4
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:4
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:23
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:23
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:23
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:24
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:24
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:24
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:6
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:6
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:6
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:7
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:7
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:7
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:12
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:12
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:12
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:13
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:13
+2023/03/09	15:36:39	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:13
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:41	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:36:42	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:55	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	15:43:55	dllAPI : OpenCard  ,IMC_CloseCard  Fail, NG_Code: 0x80028018
+2023/03/09	15:43:55	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:0
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:0
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:0
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:2
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:2
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:2
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:1
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:1
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:1
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:21
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:21
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:21
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:22
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:22
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:22
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:3
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:3
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:3
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:5
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:5
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:5
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:4
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:4
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:4
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:23
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:23
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:23
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:24
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:24
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:24
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:6
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:6
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:6
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:7
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:7
+2023/03/09	15:43:55	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:7
+2023/03/09	15:43:56	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:12
+2023/03/09	15:43:56	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:12
+2023/03/09	15:43:56	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:12
+2023/03/09	15:43:56	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:13
+2023/03/09	15:43:56	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:13
+2023/03/09	15:43:56	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:13
+2023/03/09	15:43:57	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:57	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:57	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:57	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:58	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	15:43:59	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:58:46	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	22:58:46	dllAPI : OpenCard  ,IMC_CloseCard  Fail, NG_Code: 0x80028018
+2023/03/09	22:58:46	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:0
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:0
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:0
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:2
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:2
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:2
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:1
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:1
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:1
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:21
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:21
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:21
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:22
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:22
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:22
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:3
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:3
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:3
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:5
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:5
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:5
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:4
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:4
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:4
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:23
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:23
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:23
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:24
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:24
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:24
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:6
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:6
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:6
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:7
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:7
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:7
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:12
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:12
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:12
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:13
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:13
+2023/03/09	22:58:46	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:13
+2023/03/09	22:59:13	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	22:59:13	dllAPI : OpenCard  ,IMC_CloseCard  Fail, NG_Code: 0x80028018
+2023/03/09	22:59:13	dllAPI : OpenCard  ,IMC_OpenCardHandle  Fail, NG_Code: 0x80048002
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:0
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:0
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:0
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:2
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:2
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:2
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:1
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:1
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:1
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:21
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:21
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:21
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:22
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:22
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:22
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:3
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:3
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:3
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:5
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:5
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:5
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:4
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:4
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:4
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:23
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:23
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:23
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:24
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:24
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:24
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:6
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:6
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:6
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:7
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:7
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:7
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:12
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:12
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:12
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x00328018, axNo:13
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x00318018, axNo:13
+2023/03/09	22:59:14	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x03218018, axNo:13
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:16	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:17	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:18	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:19	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:20	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018
+2023/03/09	22:59:21	dllAPI : GetPosition  ,IMC_GetAxEncPos  Fail, NG_Code: 0x03058018

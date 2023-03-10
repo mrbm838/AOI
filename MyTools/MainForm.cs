@@ -25,6 +25,9 @@ using CSharp_OPTControllerAPI;
 using MyTools.ServiceReference1;
 using MESLinkTEST;
 using ToolTotal;
+using Cowain_Form.FormView;
+using SingleAxisMotion;
+using System.Windows.Controls;
 
 namespace MyTools
 {
@@ -67,10 +70,13 @@ namespace MyTools
         string Line = "";
 
         bool bUploadPDCA = true;
+        private Motion motion;
+        private string version;
+        private string strSNLength;
+        public static bool BLoadVppSuccess;
 
         public MainForm()
         {
-            InitializeComponent();
             pathpicture = Application.StartupPath + "\\Picture\\";
             myIniFile = new IniFile(Application.StartupPath + "\\Configuration.ini");//初始化配置文件位置   
             total = Convert.ToDouble(myIniFile.IniReadValue("Startup", "LabelPD").ToString());//产品总数
@@ -78,18 +84,27 @@ namespace MyTools
             CL = Convert.ToDouble(myIniFile.IniReadValue("Startup", "LabelCL").ToString());//检测次数
             //CLD = Convert.ToDouble(myIniFile.IniReadValue("Startup", "CLData").ToString());
             passtotal = Convert.ToDouble(myIniFile.IniReadValue("Startup", "passto").ToString());//pass数
-            label41.Text = myIniFile.IniReadValue("功能", "Version").ToString();
+            version = myIniFile.IniReadValue("功能", "Version").ToString();
+            strSNLength = myIniFile.IniReadValue("功能", "SN长度").ToString();
 
-            string str = myIniFile.IniReadValue("功能", "SN长度").ToString();
-            SNLength.Text = str;
-            int.TryParse(str, out SNlengthData);
+            startForm.ShowDialog();
+            motion = new Motion(myIniFile);
+            frm_LoadingDlg loading = new frm_LoadingDlg(ref motion);//加载板卡
+            loading.ShowDialog();
+            //startForm.Close();
+
+            InitializeComponent();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            startForm.Show();
-            VisionInitialize.LoadVPP(this, this.richTextBox1);// LoadVPP();//加载VPP
-            startForm.Close();
+            if (!BLoadVppSuccess)
+            {
+                richTextBox1.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "VPP程序加载失败！" + "\r\n");
+                richTextBox1.ScrollToCaret();
+                ShowMsg1("VPP程序加载失败");
+            }
+
             try
             {
                 MES.SajetTransStart();
@@ -105,6 +120,9 @@ namespace MyTools
             //this.WindowState = FormWindowState.Maximized;//当前Form最大化
             CheckForIllegalCrossThreadCalls = false; //不检查线程安全
 
+            SNLength.Text = strSNLength;
+            int.TryParse(strSNLength, out SNlengthData);
+            label41.Text = version;
             totallab.Text = total.ToString();
             if (total == 0)
             {
@@ -557,11 +575,6 @@ namespace MyTools
             string str = string.Format(DateTime.Now.ToString("HH:mm:ss") + " : " + msg);
             log.save(str + "\r\n");
         }
-        private void ShowMsg3(string msg)
-        {
-            string str = DateTime.Now.ToString("HH:mm:ss") + " : \r\n" + msg;
-            log.save(str + "\r\n");
-        }
         #endregion
 
         #region 图像显示全屏
@@ -714,7 +727,7 @@ namespace MyTools
 
         #endregion
 
-        #region 子线程
+        #region 机台运行线程
 
         public void RemoteIOStatusThread()
         {
@@ -851,14 +864,13 @@ namespace MyTools
                                     labelPassFail1.BackColor = Color.Yellow;
                                 }
                             }
-
                         }
+
                         YunXu = false;
                         SNtxtBox.Text = "";
                         HoldSN = "";
                         HoldSNtxtBox.Text = "";
                         failmes = "";
-
                     }
                 }
             }
@@ -884,7 +896,6 @@ namespace MyTools
             }
         }
 
-        int ScanCount = 0;
         public void Run()
         {
             if (check200.Checked)
@@ -907,6 +918,7 @@ namespace MyTools
             Define.运行中 = true;
             Define.SNOK = false;
             Define.StartButtonDouble = false;
+
             LightInitialize.OPTOpenT();
             Thread.Sleep(10);
             VppRun8();
@@ -1266,7 +1278,7 @@ namespace MyTools
                 ToolDefine.Offset下限 = Define.SideSettingS[11].ToString();
                 ToolDefine.Offset上限 = Define.SideSettingS[9].ToString();
                 ToolDefine.停止时间 = Stop_Ti;
-                ToolDefine.版本号 = label41.Text.Substring(8, 6);
+                ToolDefine.版本号 = version.Substring(8, 6);
                 FoxMes = CatchData.formatMESData();
             }
 
@@ -2221,6 +2233,13 @@ namespace MyTools
             //           Encoding chs = System.Text.Encoding.GetEncoding("UTF-8");
 
             return chs.GetString(bytes);
+        }
+
+        private void Button_OpenAxisForm_Click(object sender, EventArgs e)
+        {
+            AxisForm form = new AxisForm(motion, myIniFile);
+            form.Timer.Start();
+            form.Show();
         }
 
         #endregion

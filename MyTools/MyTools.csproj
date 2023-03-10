@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>MyTools</RootNamespace>
     <AssemblyName>MyTools</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <PublishUrl>publish\</PublishUrl>
@@ -73,6 +73,10 @@
     <ApplicationIcon>load32lo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="clsL_OpenOffice, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\clsL_OpenOffice.dll</HintPath>
+    </Reference>
     <Reference Include="Cognex.VisionPro, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
     <Reference Include="Cognex.VisionPro.CalibFix, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
     <Reference Include="Cognex.VisionPro.CalibFix.Controls, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
@@ -91,6 +95,10 @@
     <Reference Include="Cognex.VisionPro.PMAlign.Controls, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
     <Reference Include="Cognex.VisionPro.ToolGroup, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
     <Reference Include="Cognex.VisionPro.ToolGroup.Controls, Version=59.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="MotionBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\MotionBase.dll</HintPath>
+    </Reference>
     <Reference Include="MvCameraControl.Net">
       <HintPath>bin\Debug\Assemblies\MvCameraControl.Net.dll</HintPath>
     </Reference>
@@ -166,6 +174,19 @@
     <Compile Include="ClassFile\MES.cs" />
     <Compile Include="ClassFile\OPTControllerAPI.cs" />
     <Compile Include="ClassFile\ParamInitialize.cs" />
+    <Compile Include="Motion\AxisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motion\AxisForm.Designer.cs">
+      <DependentUpon>AxisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motion\frm_LoadingDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motion\frm_LoadingDlg.designer.cs">
+      <DependentUpon>frm_LoadingDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motion\Motion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClassFile\SerialPort_232.cs" />
@@ -212,6 +233,12 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motion\AxisForm.resx">
+      <DependentUpon>AxisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motion\frm_LoadingDlg.resx">
+      <DependentUpon>frm_LoadingDlg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -310,5 +337,6 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

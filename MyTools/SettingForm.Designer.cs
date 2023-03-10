@@ -483,7 +483,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(663, 791);
+            this.groupBox3.Size = new System.Drawing.Size(663, 518);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "设定值";
@@ -1327,10 +1327,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(286, 812);
+            this.button2.Location = new System.Drawing.Point(268, 550);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Size = new System.Drawing.Size(134, 50);
             this.button2.TabIndex = 19;
             this.button2.Text = "保存";
             this.button2.UseVisualStyleBackColor = true;
@@ -1475,11 +1475,11 @@
             this.groupBox2.Controls.Add(this.textBoxFAI5_90);
             this.groupBox2.Controls.Add(this.label38);
             this.groupBox2.Controls.Add(this.textBoxFAI5_0);
-            this.groupBox2.Location = new System.Drawing.Point(13, 412);
+            this.groupBox2.Location = new System.Drawing.Point(432, 128);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(389, 214);
+            this.groupBox2.Size = new System.Drawing.Size(190, 214);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "补偿值";
@@ -1549,7 +1549,7 @@
             this.groupBox4.Controls.Add(this.checkBoxF2);
             this.groupBox4.Controls.Add(this.checkBoxF4);
             this.groupBox4.Controls.Add(this.checkBoxF1);
-            this.groupBox4.Location = new System.Drawing.Point(24, 655);
+            this.groupBox4.Location = new System.Drawing.Point(443, 350);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
@@ -1600,7 +1600,7 @@
             // SettingForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(685, 845);
+            this.ClientSize = new System.Drawing.Size(685, 620);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

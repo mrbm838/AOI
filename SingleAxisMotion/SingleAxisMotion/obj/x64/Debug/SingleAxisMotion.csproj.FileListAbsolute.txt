@@ -1,0 +1,79 @@
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.AssemblyReference.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.SuggestedBindingRedirects.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CoreCompileInputs.cache
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CopyComplete
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+G:\0224\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+G:\0224\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+G:\0224\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+G:\0224\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+G:\0224\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+G:\0224\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csprojResolveAssemblyReference.cache
+G:\0224\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+G:\0224\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+G:\0224\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.Cache
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.AssemblyReference.cache
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.SuggestedBindingRedirects.cache
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.cache
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CoreCompileInputs.cache
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CopyComplete
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+E:\桌面\项目文件\TIP 改机\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+F:\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+F:\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+F:\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.Cache
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csprojResolveAssemblyReference.cache
+F:\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\Cowain_Form.FormView.frm_LoadingDlg.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.AssemblyReference.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.SuggestedBindingRedirects.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\Cowain_Form.FormView.frm_LoadingDlg.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CoreCompileInputs.cache
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CopyComplete
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+E:\2328-334&407&500\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+D:\yjq\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+D:\yjq\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+D:\yjq\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\Cowain_Form.FormView.frm_LoadingDlg.resources
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.Cache
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+D:\yjq\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csprojResolveAssemblyReference.cache
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.AssemblyReference.cache
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.SuggestedBindingRedirects.cache
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\Cowain_Form.FormView.frm_LoadingDlg.resources
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.cache
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CoreCompileInputs.cache
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CopyComplete
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb

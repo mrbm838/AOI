@@ -1,0 +1,36 @@
+2023/02/28	15:14:53	dllAPI : CardInit  ,IMC_ScanCardECAT  Fail, NG_Code: 0x80069005
+2023/02/28	15:14:53	dllAPI : CardInit  ,IMC_DownLoadSystemConfig  Fail, NG_Code: 0x801200e6
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:21
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:22
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:23
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:24
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:25
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:26
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:27
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:28
+2023/02/28	15:14:53	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:29
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x00000108, axNo:30
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:41
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:41
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:41
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:42
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:42
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:42
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:43
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:43
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:43
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:44
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:44
+2023/02/28	15:14:54	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:44
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:41
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:41
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:41
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:42
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:42
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:42
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:43
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:43
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:43
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_GetAxMaxMtPara  Fail, NG_Code: 0x0032001c, axNo:44
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_SetAxMaxMtPara  Fail, NG_Code: 0x0031001c, axNo:44
+2023/02/28	15:20:12	dllAPI : MotorStop  ,IMC_AxMoveStop  Fail, NG_Code: 0x0321001c, axNo:44
