@@ -180,6 +180,17 @@ namespace MyTools
 
             //LightInitialize.MRCloseF(myClient1, richTextBox1);
 
+            if (motion.SingleMotor.SetSevON(true))
+            {
+                motion.IsMotorServoOn = true;
+                richTextBox1.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "轴使能OK！" + "\r\n");
+            }
+            else
+            {
+                motion.IsMotorServoOn = false;
+                richTextBox1.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "轴未使能！" + "\r\n");
+            }
+
             RemoteIOStatusThread();//子线程开启            
 
             ParamInitialize.ReadSettings(this, Days, LogDays);
@@ -919,6 +930,31 @@ namespace MyTools
             Define.SNOK = false;
             Define.StartButtonDouble = false;
 
+            VppRunFlow();
+            for (int i = 0; i < motion.PointsArray.GetLength(0); i++)
+            {
+                if (motion.PointsArray[i, 0] == "1")
+                {
+                    motion.SingleMotor.AbsMove(Convert.ToDouble(motion.PointsArray[i, 1]), 25);
+                    VppRunFlow();
+                }
+            }
+
+            //LightInitialize.MROpenF(myClient1, richTextBox1);
+            //Thread.Sleep(10);
+            //VppRun10();
+            //LightInitialize.MRCloseF(myClient1, richTextBox1);
+
+            //轴回原
+            Thread.Sleep(1000);
+            motion.SingleMotor.AbsMove(0, 15);
+
+            Define.运行中 = false;
+
+        }
+
+        private void VppRunFlow()
+        {
             LightInitialize.OPTOpenT();
             Thread.Sleep(10);
             VppRun8();
@@ -928,14 +964,8 @@ namespace MyTools
             Thread.Sleep(10);
             VppRun9();
             LightInitialize.OPTCloseS();
-
-            //LightInitialize.MROpenF(myClient1, richTextBox1);
-            //Thread.Sleep(10);
-            //VppRun10();
-            //LightInitialize.MRCloseF(myClient1, richTextBox1);
-            Define.运行中 = false;
-
         }
+
         #endregion
 
         #region 生成MES文件     
@@ -1507,7 +1537,6 @@ namespace MyTools
         #endregion
 
         #region 扫码枪信息处理
-
 
         bool YunXu = false;
         string HoldSN = "";
