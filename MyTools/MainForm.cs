@@ -19,7 +19,7 @@ namespace MyTools
         #region 初始化
 
         public IniFile myIniFile;
-        Log log = new Log();
+        ClassFile.Log log = new ClassFile.Log();
         public string imagepath;
         public string datapath;
         /// <summary>

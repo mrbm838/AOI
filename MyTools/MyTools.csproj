@@ -147,6 +147,7 @@
     </Compile>
     <Compile Include="ClassFile\Define.cs" />
     <Compile Include="ClassFile\LightInitialize.cs" />
+    <Compile Include="ClassFile\Log.cs" />
     <Compile Include="LightSourceControl.cs">
       <SubType>Form</SubType>
     </Compile>

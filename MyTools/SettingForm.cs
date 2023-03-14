@@ -207,10 +207,10 @@ namespace MyTools
             {
                 MessageBox.Show("“保存原图”功能保存错误");
             }
+
             if (Convert.ToDouble(myIniFile.IniReadValue("功能", "截图保存天数").ToString()) >= 0)
             {
                 Define.Function_SaveScreenshotDays = Convert.ToDouble(myIniFile.IniReadValue("功能", "原图保存天数").ToString());
-
             }
             else
             {
