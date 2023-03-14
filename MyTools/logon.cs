@@ -28,7 +28,6 @@ namespace MyTools
             pass2 = myIniFile.IniReadValue("Startup", "Pass2");//读配置文件
             pass3 = myIniFile.IniReadValue("Startup", "Pass3");//读配置文件
             comboBox1.Text = "操作员";
-            //myIniFile.IniWriteValue("Startup", "Statue", "0");
          
         }
 
@@ -41,12 +40,8 @@ namespace MyTools
             {
                 if (textBox1.Text == pass1)
                 {
-                    //if (myIniFile.IniReadValue("Startup", "Statue") == "0")
-                    //    mainform.Show();
-
                     myIniFile.IniWriteValue("Startup", "Statue", "1");//写配置文件
                     this.Close();
-
                 }
                 else
                 {
@@ -75,12 +70,9 @@ namespace MyTools
             {
                 if (textBox1.Text == pass3)
                 {
-                    //if (myIniFile.IniReadValue("Startup", "Statue") == "0")
-                    //    mainform.Show();
                     log.SaveSN("登录记录", "自动版-工程师\t" + DateTime.Now.ToString() + "\r\n");
                     myIniFile.IniWriteValue("Startup", "Statue", "3");//写配置文件
                     this.Close();
-
                 }
                 else
                 {
@@ -93,10 +85,10 @@ namespace MyTools
                 MessageBox.Show("请选择用户名");
             }
         }
+
         Log log = new Log();
         private void CancelBtn_Click(object sender, EventArgs e)
         {
-            
                 Close();
         }
 

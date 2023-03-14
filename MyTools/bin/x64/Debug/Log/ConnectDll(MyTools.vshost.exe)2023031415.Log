@@ -1,0 +1,95 @@
+2023-03-14 15:15:57  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:15:57  [          ] Version : 14.0.23107.0
+2023-03-14 15:15:57  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:15:57  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:15:57  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:15:57  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:15:57  [          ] (SajetTransStartType)Function Execute Over
+2023-03-14 15:16:34  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:16:34  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:16:34  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:16:34  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:16:48  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:16:48  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:16:48  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:16:48  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:16:50  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:16:50  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:16:50  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:16:50  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:17:32  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:17:32  [          ] Version : 14.0.23107.0
+2023-03-14 15:17:32  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:17:32  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:17:32  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:17:32  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:17:32  [          ] (SajetTransStartType)Function Execute Over
+2023-03-14 15:18:23  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:18:23  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:18:23  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:18:23  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:19:18  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:19:18  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:19:18  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:19:18  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:19:47  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:19:47  [          ] Version : 14.0.23107.0
+2023-03-14 15:19:47  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:19:47  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:19:47  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:19:47  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:19:47  [          ] (SajetTransStartType)Function Execute Over
+2023-03-14 15:20:08  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:20:08  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:20:08  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:20:08  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:43:59  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:43:59  [          ] Version : 14.0.23107.0
+2023-03-14 15:43:59  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:43:59  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:43:59  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:43:59  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:43:59  [          ] (SajetTransStartType)Function Execute Over
+2023-03-14 15:44:16  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:44:16  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:44:16  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:44:16  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:44:30  [          ] SajetTransClose±»ºô½Ð
+2023-03-14 15:44:30  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-14 15:44:30  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-14 15:44:30  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-14 15:44:30  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-14 15:44:30  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-14 15:44:30  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-14 15:44:54  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:44:54  [          ] Version : 14.0.23107.0
+2023-03-14 15:44:54  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:44:54  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:44:54  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:44:54  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:44:54  [          ] (SajetTransStartType)Function Execute Over
+2023-03-14 15:49:21  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:49:21  [          ] Version : 14.0.23107.0
+2023-03-14 15:49:21  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:49:21  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:49:21  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:49:21  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:49:21  [          ] (SajetTransStartType)Function Execute Over
+2023-03-14 15:50:37  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-14 15:50:37  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-14 15:50:37  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-14 15:50:37  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-14 15:52:27  [          ] SajetTransClose±»ºô½Ð
+2023-03-14 15:52:27  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-14 15:52:27  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-14 15:52:27  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-14 15:52:27  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-14 15:52:27  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-14 15:52:27  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-14 15:55:32  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-14 15:55:32  [          ] Version : 14.0.23107.0
+2023-03-14 15:55:32  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-14 15:55:32  [          ] (TCenter1.Create)Create Start
+2023-03-14 15:55:32  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-14 15:55:32  [          ] (TCenter1.Create)Create Over
+2023-03-14 15:55:32  [          ] (SajetTransStartType)Function Execute Over

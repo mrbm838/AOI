@@ -18,10 +18,12 @@ namespace MyTools
         public string[] F = new string[2];
         public string[] M = new string[4];
         public string FF, MM;
+
         public SettingForm()
         {
             InitializeComponent();
         }
+
         private void SettingForm_Load(object sender, EventArgs e)
         {
             myIniFile = new IniFile(Application.StartupPath + "\\Configuration.ini");//初始化配置文件位置
@@ -30,24 +32,24 @@ namespace MyTools
             ReadSettings();//读设置参数
             ReadFunction();//读功能设置参数
             CompensationValue();//读补偿值
-            timer1.Start();
         }
 
         private void SettingForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             WriteFunction();
             ReadFunction();
-            timer1.Stop();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void ShowFAIPanel()
         {
             if (myIniFile.IniReadValue("Startup", "Statue") == "3")
             {
                 groupBox2.Visible = true;
             }
             else
+            {
                 groupBox2.Visible = false;
+            }
         }
 
         public void CompensationValue()

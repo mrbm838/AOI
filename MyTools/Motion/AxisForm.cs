@@ -70,7 +70,8 @@ namespace SingleAxisMotion
         private void Button_Save_Click(object sender, EventArgs e)
         {
             bool result = false;
-            if (AOIMethod.IsNumber(Label_CurPos.Text))
+            double dPos;
+            if (Double.TryParse(Label_CurPos.Text, out dPos))
             {
                 _motion.PointsArray[ComboBox_Point.SelectedIndex, 1] = Label_CurPos.Text;
                 for (int i = 0; i < CheckedListBox.Items.Count; i++)
@@ -85,6 +86,7 @@ namespace SingleAxisMotion
                 _myIniFile.IniWriteValue("Axis", "PointT_Enable", _motion.PointsArray[2, 0]);
                 _myIniFile.IniWriteValue("Axis", "PointT_Pos", _motion.PointsArray[2, 1]);
 
+                TextBox_PointPos.Text = _motion.PointsArray[ComboBox_Point.SelectedIndex, 0];
                 result = true;
             }
             MessageBox.Show(result ? "保存成功" : "保存失败");

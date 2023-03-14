@@ -35,12 +35,12 @@ namespace MyTools
                 //CCD3LightOFF.Visible = false;
                 form.BarValue = 100;
                 Thread.Sleep(500);
-                MainForm.BLoadVppSuccess = true;
+                MainForm.LoadVppSuccess = true;
             }
             catch
             {
                 form.BarValue = 100;
-                MainForm.BLoadVppSuccess = false;
+                MainForm.LoadVppSuccess = false;
             }
         }
     }

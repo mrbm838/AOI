@@ -77,3 +77,13 @@ F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAx
 F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.CopyComplete
 F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
 F:\0308\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.pdb
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csprojResolveAssemblyReference.cache
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.AxisForm.resources
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\Cowain_Form.FormView.frm_LoadingDlg.resources
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.Cache

@@ -1,0 +1,30 @@
+11:07:17 : CCD1相机检测失败 
+11:07:17 : CCD1拍照完成
+2023-03-14 11:08:42 153  Save CCD1AcqFifoTool.vpp
+2023-03-14 11:08:43 914  Save CCD1AcqFifoTool.vpp
+2023-03-14 11:08:44 154  Save CCD1AcqFifoTool.vpp
+2023-03-14 11:08:44 322  Save CCD1AcqFifoTool.vpp
+2023-03-14 11:08:54 265  Save CCD2AcqFifoTool.vpp
+2023-03-14 11:09:02 145  Save CCD2AcqFifoTool.vpp
+2023-03-14 11:09:22 053  Save TipAOITopCamera.vpp
+11:09:22 : CCD1程序保存成功
+2023-03-14 11:09:37 867  Save TipAOISideCamera.vpp
+11:09:38 : CCD2程序保存成功
+11:09:40 : CCD1实时中
+11:09:42 : CCD1实时结束
+11:09:43 : CCD1实时中
+11:09:48 : CCD1实时结束
+16:02:49 : CCD1相机检测失败 
+16:02:49 : CCD1拍照完成
+16:02:52 : CCD2检测失败 
+16:02:52 : CCD2拍照完成
+16:02:54 : CCD2检测失败 
+16:02:54 : CCD2拍照完成
+16:02:55 : CCD2检测失败 
+16:02:55 : CCD2拍照完成
+16:02:56 : CCD1相机检测失败 
+16:02:56 : CCD1拍照完成
+16:02:58 : CCD1相机检测失败 
+16:02:58 : CCD1拍照完成
+16:03:10 : CCD2检测失败 
+16:03:10 : CCD2拍照完成

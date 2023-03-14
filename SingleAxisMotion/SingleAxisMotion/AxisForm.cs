@@ -39,7 +39,7 @@ namespace SingleAxisMotion
         {
             ComboBox_MotionSpace.SelectedIndex = 4;
             ComboBox_Point.SelectedIndex = 0;
-            _pMotor = clsMotors.MotorList["M01_00"];
+            _pMotor = clsMotors.MotorList["M01_03"];
 
             Timer timer = new Timer { Interval = 10, Enabled = true };
             timer.Tick += Timer_Tick;
@@ -77,7 +77,7 @@ namespace SingleAxisMotion
             {
                 _pointsArray[i, 1] = CheckedListBox.GetItemCheckState(i) == CheckState.Checked ? "1" : "0";
             }
-
+            TextBox_PointPos.Text = _pointsArray[ComboBox_Point.SelectedIndex, 0];
             bool back = WriteXml();
             MessageBox.Show(back ? "保存成功" : "保存失败");
         }
@@ -195,6 +195,11 @@ namespace SingleAxisMotion
         private void ComboBox_Point_SelectedIndexChanged(object sender, EventArgs e)
         {
             TextBox_PointPos.Text = _pointsArray[Convert.ToInt32(ComboBox_Point.SelectedIndex), 0];
+        }
+
+        private void AxisForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            _pMotor.SetSevON(false);
         }
     }
 }

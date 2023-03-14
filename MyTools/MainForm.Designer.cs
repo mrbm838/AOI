@@ -138,6 +138,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.Button_OpenAxisForm = new System.Windows.Forms.Button();
             this.but_PDCA = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.DeletePhoto = new System.Windows.Forms.Button();
@@ -150,7 +151,7 @@
             this.CCD2Btn = new System.Windows.Forms.Button();
             this.CCD1Btn = new System.Windows.Forms.Button();
             this.OpenLOGBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ChangePSW = new System.Windows.Forms.Button();
             this.OPT2OpenBtn = new System.Windows.Forms.Button();
             this.OPT2CloseBtn = new System.Windows.Forms.Button();
             this.OPT1OpenBtn = new System.Windows.Forms.Button();
@@ -175,7 +176,7 @@
             this.VP1Btn = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.check200 = new System.Windows.Forms.CheckBox();
-            this.ChangePSW = new System.Windows.Forms.Button();
+            this.Unknow = new System.Windows.Forms.Button();
             this.ConnectTool = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -229,7 +230,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.cogRecordDisplay1 = new Cognex.VisionPro.CogRecordDisplay();
             this.cogRecordDisplay2 = new Cognex.VisionPro.CogRecordDisplay();
-            this.Button_OpenAxisForm = new System.Windows.Forms.Button();
             this.panel_Tool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -406,7 +406,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(993, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(504, 836);
+            this.groupBox2.Size = new System.Drawing.Size(504, 814);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "状态栏";
@@ -729,11 +729,11 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(2, 502);
+            this.tabControl2.Location = new System.Drawing.Point(2, 490);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(488, 332);
+            this.tabControl2.Size = new System.Drawing.Size(488, 322);
             this.tabControl2.TabIndex = 21;
             // 
             // tabPage3
@@ -746,7 +746,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(480, 306);
+            this.tabPage3.Size = new System.Drawing.Size(480, 296);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "生产操作栏";
             // 
@@ -867,7 +867,7 @@
             this.ExitLabel.Location = new System.Drawing.Point(41, 242);
             this.ExitLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ExitLabel.Name = "ExitLabel";
-            this.ExitLabel.Size = new System.Drawing.Size(71, 16);
+            this.ExitLabel.Size = new System.Drawing.Size(72, 16);
             this.ExitLabel.TabIndex = 39;
             this.ExitLabel.Text = "退出程序";
             this.ExitLabel.Click += new System.EventHandler(this.ExitBtn_Click);
@@ -879,7 +879,7 @@
             this.ChangeUserLabel.Location = new System.Drawing.Point(41, 177);
             this.ChangeUserLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChangeUserLabel.Name = "ChangeUserLabel";
-            this.ChangeUserLabel.Size = new System.Drawing.Size(71, 16);
+            this.ChangeUserLabel.Size = new System.Drawing.Size(72, 16);
             this.ChangeUserLabel.TabIndex = 38;
             this.ChangeUserLabel.Text = "切换用户";
             this.ChangeUserLabel.Click += new System.EventHandler(this.ChangeUserLabel_Click);
@@ -938,11 +938,11 @@
             this.Parameter.Controls.Add(this.tabPage2);
             this.Parameter.Controls.Add(this.tabPage6);
             this.Parameter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Parameter.Location = new System.Drawing.Point(494, 502);
+            this.Parameter.Location = new System.Drawing.Point(494, 490);
             this.Parameter.Margin = new System.Windows.Forms.Padding(2);
             this.Parameter.Name = "Parameter";
             this.Parameter.SelectedIndex = 0;
-            this.Parameter.Size = new System.Drawing.Size(488, 332);
+            this.Parameter.Size = new System.Drawing.Size(488, 322);
             this.Parameter.TabIndex = 20;
             // 
             // tabPage5
@@ -955,7 +955,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(480, 306);
+            this.tabPage5.Size = new System.Drawing.Size(480, 296);
             this.tabPage5.TabIndex = 3;
             this.tabPage5.Text = "Main";
             // 
@@ -1132,7 +1132,7 @@
             this.label38.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label38.Location = new System.Drawing.Point(329, 63);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(15, 16);
+            this.label38.Size = new System.Drawing.Size(16, 16);
             this.label38.TabIndex = 94;
             this.label38.Text = "0";
             this.label38.Visible = false;
@@ -1204,7 +1204,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(480, 306);
+            this.tabPage4.Size = new System.Drawing.Size(480, 296);
             this.tabPage4.TabIndex = 2;
             this.tabPage4.Text = "View";
             // 
@@ -1216,6 +1216,7 @@
             this.label53.Size = new System.Drawing.Size(41, 24);
             this.label53.TabIndex = 83;
             this.label53.Text = "  90°\r\nOFFSET";
+            this.label53.Visible = false;
             // 
             // label52
             // 
@@ -1225,6 +1226,7 @@
             this.label52.Size = new System.Drawing.Size(41, 24);
             this.label52.TabIndex = 83;
             this.label52.Text = " 180°\r\nOFFSET";
+            this.label52.Visible = false;
             // 
             // label51
             // 
@@ -1234,6 +1236,7 @@
             this.label51.Size = new System.Drawing.Size(41, 24);
             this.label51.TabIndex = 83;
             this.label51.Text = " 270°\r\nOFFSET";
+            this.label51.Visible = false;
             // 
             // label50
             // 
@@ -1243,6 +1246,7 @@
             this.label50.Size = new System.Drawing.Size(41, 24);
             this.label50.TabIndex = 83;
             this.label50.Text = "  0°\r\nOFFSET";
+            this.label50.Visible = false;
             // 
             // Gap_180
             // 
@@ -1394,9 +1398,10 @@
             this.label35.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label35.Location = new System.Drawing.Point(129, 158);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(79, 16);
+            this.label35.Size = new System.Drawing.Size(80, 16);
             this.label35.TabIndex = 5;
             this.label35.Text = "CCD3 View";
+            this.label35.Visible = false;
             // 
             // label34
             // 
@@ -1404,7 +1409,7 @@
             this.label34.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label34.Location = new System.Drawing.Point(290, 14);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(79, 16);
+            this.label34.Size = new System.Drawing.Size(80, 16);
             this.label34.TabIndex = 4;
             this.label34.Text = "CCD2 View";
             // 
@@ -1414,7 +1419,7 @@
             this.label32.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label32.Location = new System.Drawing.Point(140, 14);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(79, 16);
+            this.label32.Size = new System.Drawing.Size(80, 16);
             this.label32.TabIndex = 3;
             this.label32.Text = "CCD1 View";
             // 
@@ -1425,6 +1430,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(242, 137);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // pictureBox2
             // 
@@ -1450,7 +1456,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(480, 306);
+            this.tabPage1.Size = new System.Drawing.Size(480, 296);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manual";
             // 
@@ -1469,7 +1475,7 @@
             this.groupBox13.Controls.Add(this.CCD2Btn);
             this.groupBox13.Controls.Add(this.CCD1Btn);
             this.groupBox13.Controls.Add(this.OpenLOGBtn);
-            this.groupBox13.Controls.Add(this.button2);
+            this.groupBox13.Controls.Add(this.ChangePSW);
             this.groupBox13.Controls.Add(this.OPT2OpenBtn);
             this.groupBox13.Controls.Add(this.OPT2CloseBtn);
             this.groupBox13.Controls.Add(this.OPT1OpenBtn);
@@ -1485,6 +1491,17 @@
             this.groupBox13.Size = new System.Drawing.Size(476, 273);
             this.groupBox13.TabIndex = 2;
             this.groupBox13.TabStop = false;
+            // 
+            // Button_OpenAxisForm
+            // 
+            this.Button_OpenAxisForm.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_OpenAxisForm.Location = new System.Drawing.Point(121, 223);
+            this.Button_OpenAxisForm.Name = "Button_OpenAxisForm";
+            this.Button_OpenAxisForm.Size = new System.Drawing.Size(98, 33);
+            this.Button_OpenAxisForm.TabIndex = 105;
+            this.Button_OpenAxisForm.Text = "单轴操作";
+            this.Button_OpenAxisForm.UseVisualStyleBackColor = true;
+            this.Button_OpenAxisForm.Click += new System.EventHandler(this.Button_OpenAxisForm_Click);
             // 
             // but_PDCA
             // 
@@ -1630,16 +1647,16 @@
             this.OpenLOGBtn.UseVisualStyleBackColor = true;
             this.OpenLOGBtn.Click += new System.EventHandler(this.OpenLOGBtn_Click);
             // 
-            // button2
+            // ChangePSW
             // 
-            this.button2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(13, 139);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 33);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "修改密码";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.ChangePSW_Click);
+            this.ChangePSW.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ChangePSW.Location = new System.Drawing.Point(13, 139);
+            this.ChangePSW.Name = "ChangePSW";
+            this.ChangePSW.Size = new System.Drawing.Size(98, 33);
+            this.ChangePSW.TabIndex = 33;
+            this.ChangePSW.Text = "修改密码";
+            this.ChangePSW.UseVisualStyleBackColor = false;
+            this.ChangePSW.Click += new System.EventHandler(this.ChangePSW_Click);
             // 
             // OPT2OpenBtn
             // 
@@ -1751,7 +1768,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(480, 306);
+            this.tabPage2.Size = new System.Drawing.Size(480, 296);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "CCD Setting";
             // 
@@ -1924,7 +1941,7 @@
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.check200);
-            this.groupBox10.Controls.Add(this.ChangePSW);
+            this.groupBox10.Controls.Add(this.Unknow);
             this.groupBox10.Controls.Add(this.ConnectTool);
             this.groupBox10.Enabled = false;
             this.groupBox10.Location = new System.Drawing.Point(360, 40);
@@ -1948,16 +1965,17 @@
             this.check200.Text = "ReTest";
             this.check200.UseVisualStyleBackColor = true;
             // 
-            // ChangePSW
+            // Unknow
             // 
-            this.ChangePSW.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ChangePSW.Location = new System.Drawing.Point(4, 83);
-            this.ChangePSW.Margin = new System.Windows.Forms.Padding(2);
-            this.ChangePSW.Name = "ChangePSW";
-            this.ChangePSW.Size = new System.Drawing.Size(75, 28);
-            this.ChangePSW.TabIndex = 5;
-            this.ChangePSW.Text = "...";
-            this.ChangePSW.UseVisualStyleBackColor = true;
+            this.Unknow.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Unknow.Location = new System.Drawing.Point(4, 83);
+            this.Unknow.Margin = new System.Windows.Forms.Padding(2);
+            this.Unknow.Name = "Unknow";
+            this.Unknow.Size = new System.Drawing.Size(75, 28);
+            this.Unknow.TabIndex = 5;
+            this.Unknow.Text = "...";
+            this.Unknow.UseVisualStyleBackColor = true;
+            this.Unknow.Visible = false;
             // 
             // ConnectTool
             // 
@@ -1980,7 +1998,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(480, 306);
+            this.tabPage6.Size = new System.Drawing.Size(480, 296);
             this.tabPage6.TabIndex = 4;
             this.tabPage6.Text = "Parameter";
             // 
@@ -2002,9 +2020,9 @@
             // 
             // SNLength
             // 
-            this.SNLength.Location = new System.Drawing.Point(88, 25);
+            this.SNLength.Location = new System.Drawing.Point(102, 25);
             this.SNLength.Name = "SNLength";
-            this.SNLength.Size = new System.Drawing.Size(78, 21);
+            this.SNLength.Size = new System.Drawing.Size(51, 21);
             this.SNLength.TabIndex = 108;
             this.SNLength.Text = "12";
             this.SNLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2012,7 +2030,7 @@
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(8, 88);
+            this.label57.Location = new System.Drawing.Point(8, 90);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(71, 12);
             this.label57.TabIndex = 119;
@@ -2021,7 +2039,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(6, 31);
+            this.label39.Location = new System.Drawing.Point(8, 30);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(41, 12);
             this.label39.TabIndex = 107;
@@ -2029,10 +2047,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(405, 246);
+            this.button5.Location = new System.Drawing.Point(47, 156);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 25);
+            this.button5.Size = new System.Drawing.Size(72, 39);
             this.button5.TabIndex = 109;
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = true;
@@ -2040,9 +2058,9 @@
             // 
             // LogDays
             // 
-            this.LogDays.Location = new System.Drawing.Point(125, 85);
+            this.LogDays.Location = new System.Drawing.Point(102, 85);
             this.LogDays.Name = "LogDays";
-            this.LogDays.Size = new System.Drawing.Size(41, 21);
+            this.LogDays.Size = new System.Drawing.Size(51, 21);
             this.LogDays.TabIndex = 118;
             this.LogDays.Text = "300";
             this.LogDays.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2050,7 +2068,7 @@
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(8, 56);
+            this.label56.Location = new System.Drawing.Point(8, 61);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(77, 12);
             this.label56.TabIndex = 117;
@@ -2058,9 +2076,9 @@
             // 
             // Days
             // 
-            this.Days.Location = new System.Drawing.Point(125, 53);
+            this.Days.Location = new System.Drawing.Point(102, 55);
             this.Days.Name = "Days";
-            this.Days.Size = new System.Drawing.Size(41, 21);
+            this.Days.Size = new System.Drawing.Size(51, 21);
             this.Days.TabIndex = 116;
             this.Days.Text = "9";
             this.Days.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2103,11 +2121,11 @@
             this.groupBox7.Controls.Add(this.textBoxFAI_5_180);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox7.Location = new System.Drawing.Point(494, 369);
+            this.groupBox7.Location = new System.Drawing.Point(494, 360);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(488, 129);
+            this.groupBox7.Size = new System.Drawing.Size(488, 126);
             this.groupBox7.TabIndex = 17;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "CCD2";
@@ -2283,11 +2301,11 @@
             this.groupBox6.Controls.Add(this.textBoxFAI_5_90);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox6.Location = new System.Drawing.Point(2, 369);
+            this.groupBox6.Location = new System.Drawing.Point(2, 360);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(488, 129);
+            this.groupBox6.Size = new System.Drawing.Size(488, 126);
             this.groupBox6.TabIndex = 16;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "CCD1";
@@ -2470,16 +2488,16 @@
             // displayLayoutPanel
             // 
             this.displayLayoutPanel.ColumnCount = 2;
-            this.displayLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66F));
-            this.displayLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.displayLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76F));
+            this.displayLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
             this.displayLayoutPanel.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.displayLayoutPanel.Controls.Add(this.groupBox2, 1, 0);
             this.displayLayoutPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.displayLayoutPanel.Location = new System.Drawing.Point(0, 78);
+            this.displayLayoutPanel.Location = new System.Drawing.Point(0, 46);
             this.displayLayoutPanel.Name = "displayLayoutPanel";
             this.displayLayoutPanel.RowCount = 1;
             this.displayLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.displayLayoutPanel.Size = new System.Drawing.Size(1500, 842);
+            this.displayLayoutPanel.Size = new System.Drawing.Size(1500, 835);
             this.displayLayoutPanel.TabIndex = 55;
             // 
             // tableLayoutPanel1
@@ -2500,7 +2518,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 836);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 814);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // cogRecordDisplay1
@@ -2518,7 +2536,7 @@
             this.cogRecordDisplay1.MouseWheelSensitivity = 1D;
             this.cogRecordDisplay1.Name = "cogRecordDisplay1";
             this.cogRecordDisplay1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("cogRecordDisplay1.OcxState")));
-            this.cogRecordDisplay1.Size = new System.Drawing.Size(486, 361);
+            this.cogRecordDisplay1.Size = new System.Drawing.Size(486, 352);
             this.cogRecordDisplay1.TabIndex = 2;
             this.cogRecordDisplay1.DoubleClick += new System.EventHandler(this.cogRecordDisplay1_DoubleClick_1);
             // 
@@ -2537,31 +2555,22 @@
             this.cogRecordDisplay2.MouseWheelSensitivity = 1D;
             this.cogRecordDisplay2.Name = "cogRecordDisplay2";
             this.cogRecordDisplay2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("cogRecordDisplay2.OcxState")));
-            this.cogRecordDisplay2.Size = new System.Drawing.Size(486, 361);
+            this.cogRecordDisplay2.Size = new System.Drawing.Size(486, 352);
             this.cogRecordDisplay2.TabIndex = 1;
             this.cogRecordDisplay2.DoubleClick += new System.EventHandler(this.cogRecordDisplay2_DoubleClick);
-            // 
-            // Button_OpenAxisForm
-            // 
-            this.Button_OpenAxisForm.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_OpenAxisForm.Location = new System.Drawing.Point(121, 223);
-            this.Button_OpenAxisForm.Name = "Button_OpenAxisForm";
-            this.Button_OpenAxisForm.Size = new System.Drawing.Size(98, 33);
-            this.Button_OpenAxisForm.TabIndex = 105;
-            this.Button_OpenAxisForm.Text = "单轴操作";
-            this.Button_OpenAxisForm.UseVisualStyleBackColor = true;
-            this.Button_OpenAxisForm.Click += new System.EventHandler(this.Button_OpenAxisForm_Click);
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1500, 920);
+            this.ClientSize = new System.Drawing.Size(1500, 881);
+            this.ControlBox = false;
             this.Controls.Add(this.displayLayoutPanel);
             this.Controls.Add(this.panel_Tool);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel_Tool.ResumeLayout(false);
@@ -2759,7 +2768,7 @@
         private System.Windows.Forms.Button CCD2Btn;
         private System.Windows.Forms.Button CCD1Btn;
         private System.Windows.Forms.Button OpenLOGBtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ChangePSW;
         private System.Windows.Forms.Button OPT2OpenBtn;
         private System.Windows.Forms.Button OPT2CloseBtn;
         private System.Windows.Forms.Button OPT1OpenBtn;
@@ -2784,7 +2793,7 @@
         private System.Windows.Forms.Button VP1Btn;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.CheckBox check200;
-        private System.Windows.Forms.Button ChangePSW;
+        private System.Windows.Forms.Button Unknow;
         private System.Windows.Forms.Button ConnectTool;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.GroupBox groupBox3;

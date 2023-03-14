@@ -70,7 +70,7 @@ namespace MyTools
             try
             {
                 if (!Define.sp1.IsOpen)
-                    Define.sp1.Open();
+                    Define.sp1.Open();                                
                 bIOOpened = true;
                 Define.sp1.Write("Cmd_On_" + Define.绿灯 + "\r\n");
                 Thread.Sleep(100);

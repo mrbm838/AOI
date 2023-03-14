@@ -37,13 +37,13 @@
             this.ComboBox_Point = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.TextBox_PointPos = new System.Windows.Forms.TextBox();
             this.Button_MovePoint = new System.Windows.Forms.Button();
             this.CheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.Button_Servo = new System.Windows.Forms.Button();
             this.Button_RightMove = new System.Windows.Forms.Button();
             this.Button_Reversion = new System.Windows.Forms.Button();
             this.Button_Stop = new System.Windows.Forms.Button();
-            this.TextBox_PointPos = new System.Windows.Forms.TextBox();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.label1.Font = new System.Drawing.Font("宋体", 12F);
             this.label1.Location = new System.Drawing.Point(193, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "轴当前位置：";
             // 
@@ -102,7 +102,7 @@
             this.label2.Font = new System.Drawing.Font("宋体", 12F);
             this.label2.Location = new System.Drawing.Point(193, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 16);
+            this.label2.Size = new System.Drawing.Size(88, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "运动度数：";
             // 
@@ -137,7 +137,7 @@
             this.label3.Font = new System.Drawing.Font("宋体", 12F);
             this.label3.Location = new System.Drawing.Point(193, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
+            this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "点位：";
             // 
@@ -162,6 +162,14 @@
             this.groupBox.TabIndex = 9;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "点位设置";
+            // 
+            // TextBox_PointPos
+            // 
+            this.TextBox_PointPos.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TextBox_PointPos.Location = new System.Drawing.Point(437, 156);
+            this.TextBox_PointPos.Name = "TextBox_PointPos";
+            this.TextBox_PointPos.Size = new System.Drawing.Size(100, 26);
+            this.TextBox_PointPos.TabIndex = 12;
             // 
             // Button_MovePoint
             // 
@@ -232,14 +240,6 @@
             this.Button_Stop.UseVisualStyleBackColor = true;
             this.Button_Stop.Click += new System.EventHandler(this.Button_Stop_Click);
             // 
-            // TextBox_PointPos
-            // 
-            this.TextBox_PointPos.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextBox_PointPos.Location = new System.Drawing.Point(437, 156);
-            this.TextBox_PointPos.Name = "TextBox_PointPos";
-            this.TextBox_PointPos.Size = new System.Drawing.Size(100, 26);
-            this.TextBox_PointPos.TabIndex = 12;
-            // 
             // AxisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -250,6 +250,7 @@
             this.Controls.Add(this.groupBox);
             this.Name = "AxisForm";
             this.Text = "轴";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AxisForm_FormClosing);
             this.Load += new System.EventHandler(this.AxisForm_Load);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();

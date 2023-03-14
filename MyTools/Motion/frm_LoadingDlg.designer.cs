@@ -33,6 +33,7 @@
             this.timer_Loading = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,10 +66,20 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 52);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(445, 31);
+            this.pictureBox1.Size = new System.Drawing.Size(445, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 16F);
+            this.label1.Location = new System.Drawing.Point(146, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 22);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "加载运动控制卡";
             // 
             // frm_LoadingDlg
             // 
@@ -76,6 +87,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(474, 121);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label_Title);
@@ -88,6 +100,7 @@
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,5 +110,6 @@
         private System.Windows.Forms.Timer timer_Loading;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -145,7 +144,6 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.checkBoxF2 = new System.Windows.Forms.CheckBox();
             this.checkBoxF4 = new System.Windows.Forms.CheckBox();
@@ -1540,10 +1538,6 @@
             this.label13.TabIndex = 7;
             this.label13.Text = "FAI5-90°:";
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.checkBoxF2);
@@ -1713,7 +1707,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.TextBox textBoxTOP2;
         private System.Windows.Forms.TextBox F_Offset12;
         private System.Windows.Forms.Label label62;

@@ -36,7 +36,7 @@ namespace SingleAxisMotion
 
             StartInitial();
 
-            SingleMotor = clsMotors.MotorList["M01_00"];
+            SingleMotor = clsMotors.MotorList["M01_03"];
         }
 
         public enum enInitStep

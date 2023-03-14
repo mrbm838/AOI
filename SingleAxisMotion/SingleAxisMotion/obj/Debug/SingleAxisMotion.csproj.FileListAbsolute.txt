@@ -10,3 +10,6 @@ E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj
 E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.exe
 E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.pdb
 E:\MyProgram\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.csproj.CopyComplete
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\Debug\SingleAxisMotion.exe.config
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.exe
+D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\Debug\SingleAxisMotion.pdb
