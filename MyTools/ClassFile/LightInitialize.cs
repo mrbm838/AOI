@@ -1,6 +1,7 @@
 ﻿using CSharp_OPTControllerAPI;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -14,33 +15,32 @@ namespace MyTools
     {
 
         #region 漠然光源控制器
-        public static void RGBParamInitailize(MainForm form)
+        public static void RGBParamInitailize(IniFile myIniFile)
         {
-            Define.MRRed = Convert.ToInt32(form.myIniFile.IniReadValue("MR光源控制器", "Red"));
-            Define.MRGreen = Convert.ToInt32(form.myIniFile.IniReadValue("MR光源控制器", "Green"));
-            Define.MRBlue = Convert.ToInt32(form.myIniFile.IniReadValue("MR光源控制器", "Blue"));
+            Define.MRRed = Convert.ToInt32(myIniFile.IniReadValue("MR光源控制器", "Red"));
+            Define.MRGreen = Convert.ToInt32(myIniFile.IniReadValue("MR光源控制器", "Green"));
+            Define.MRBlue = Convert.ToInt32(myIniFile.IniReadValue("MR光源控制器", "Blue"));
 
         }
-        public static void RGBConnect(MainForm form, NetClient myClient1, RichTextBox richTextBox)
+
+        public static void RGBConnect(MainForm form, NetClient myClient1, Action<string, Color> AddToQueue)
         {
             try
             {
               
                 myClient1.Open("192.168.5.10", 2000);
                 //RGBLightOFF.Visible = false;
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "漠然光源控制器加载完成！" + "\r\n");
+                AddToQueue("漠然光源控制器加载完成！", Color.Black);
             }
             catch (Exception)
             {
                 //RGBLightOFF.Visible = true;
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "漠然光源控制器加载失败！" + "\r\n");
-                form.ShowMsg1("漠然光源控制器加载失败！");
+                AddToQueue("漠然光源控制器加载失败！", Color.Red);
+                form.SaveMsg("漠然光源控制器加载失败！");
             }
         }
 
-
-
-        public static  void MROpenF( NetClient myClient1, RichTextBox richTextBox)
+        public static  void MROpenF( NetClient myClient1, Action<string, Color> AddToQueue)
         {
             try
             {
@@ -97,10 +97,11 @@ namespace MyTools
             }
             catch (Exception)
             {
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "光源参数输入错误" + "\r\n");
+                AddToQueue("光源参数输入错误", Color.Red);
             }
         }
-        public static void MRCloseF(NetClient myClient1, RichTextBox richTextBox)
+
+        public static void MRCloseF(NetClient myClient1, Action<string, Color> AddToQueue)
         {
             try
             {
@@ -130,7 +131,7 @@ namespace MyTools
             }
             catch (Exception)
             {
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "光源参数输入错误" + "\r\n");
+                AddToQueue("光源参数输入错误", Color.Red);
             }
         }
 
@@ -142,14 +143,14 @@ namespace MyTools
         private static String SN;
         private static OPTControllerAPI OPTController = null;
         static int ch1 = 0, ch2 = 0, ch3 = 0, ch4 = 0;
-        public static void LightParamInitailize(MainForm form)
+        public static void LightParamInitailize(IniFile myIniFile)
         {
-            ch1 = Convert.ToInt32(form.myIniFile.IniReadValue("OPT光源控制器", "channl1"));
-            ch2 = Convert.ToInt32(form.myIniFile.IniReadValue("OPT光源控制器", "channl2"));
-            ch3 = Convert.ToInt32(form.myIniFile.IniReadValue("OPT光源控制器", "channl3"));
-            ch4 = Convert.ToInt32(form.myIniFile.IniReadValue("OPT光源控制器", "channl4"));
+            ch1 = Convert.ToInt32(myIniFile.IniReadValue("OPT光源控制器", "channl1"));
+            ch2 = Convert.ToInt32(myIniFile.IniReadValue("OPT光源控制器", "channl2"));
+            ch3 = Convert.ToInt32(myIniFile.IniReadValue("OPT光源控制器", "channl3"));
+            ch4 = Convert.ToInt32(myIniFile.IniReadValue("OPT光源控制器", "channl4"));
         }
-        public static void OPTConnect(RichTextBox richTextBox)
+        public static void OPTConnect(Action<string, Color> AddToQueue)
         {
             try
             {
@@ -161,8 +162,7 @@ namespace MyTools
                 {
                     //OPTLightOFF.Visible = true;
                     // richTextBox1.Text = "OPT Serial name can not be empty";
-                    richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "OPT Serial name can not be empty！" + "\r\n");
-                    richTextBox.ScrollToCaret();
+                    AddToQueue("OPT Serial name can not be empty！", Color.Red);
                     return;
                 }
 
@@ -171,17 +171,16 @@ namespace MyTools
                 {
                     //OPTLightOFF.Visible = true;
                     // richTextBox1.Text = "OPT Failed to create Ethernet connection by IP";
-                    richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "OPT Failed to create Ethernet connection by IP！" + "\r\n");
-                    richTextBox.ScrollToCaret();
+                    AddToQueue("OPT Failed to create Ethernet connection by IP！", Color.Red);
                 }
                 else
                 {
-                    richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "OPT光源控制器加载完成！" + "\r\n");
+                    AddToQueue("OPT光源控制器加载完成！", Color.Black);
                 }
             }
             catch
             {
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + "OPT光源控制器加载失败！" + "\r\n");
+                AddToQueue("OPT光源控制器加载失败！", Color.Red);
             }
         }
 
@@ -193,6 +192,7 @@ namespace MyTools
             OPTController.SetIntensity(2, ch2);//设置光源亮度（通道号，光度）58
             OPTController.TurnOnChannel(2);
         }
+
         public static void OPTOpenS()
         {
             OPTController.SetIntensity(3, ch3);//设置光源亮度（通道号，光度）41

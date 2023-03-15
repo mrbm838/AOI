@@ -1,0 +1,29 @@
+2023-03-15 09:15:57  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-15 09:15:57  [          ] Version : 14.0.23107.0
+2023-03-15 09:15:57  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-15 09:15:57  [          ] (TCenter1.Create)Create Start
+2023-03-15 09:15:57  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-15 09:15:57  [          ] (TCenter1.Create)Create Over
+2023-03-15 09:15:57  [          ] (SajetTransStartType)Function Execute Over
+2023-03-15 09:19:27  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-15 09:19:27  [          ] Version : 14.0.23107.0
+2023-03-15 09:19:27  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-15 09:19:27  [          ] (TCenter1.Create)Create Start
+2023-03-15 09:19:27  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-15 09:19:27  [          ] (TCenter1.Create)Create Over
+2023-03-15 09:19:27  [          ] (SajetTransStartType)Function Execute Over
+2023-03-15 09:44:07  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-15 09:44:07  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-15 09:44:07  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-15 09:44:07  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-15 09:44:29  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-15 09:44:29  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-15 09:44:29  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-15 09:44:29  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-15 09:49:18  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-15 09:49:18  [          ] Version : 14.0.23107.0
+2023-03-15 09:49:18  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-15 09:49:18  [          ] (TCenter1.Create)Create Start
+2023-03-15 09:49:18  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-15 09:49:18  [          ] (TCenter1.Create)Create Over
+2023-03-15 09:49:18  [          ] (SajetTransStartType)Function Execute Over

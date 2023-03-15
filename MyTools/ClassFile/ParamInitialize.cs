@@ -77,7 +77,6 @@ namespace MyTools
                 Thread.Sleep(100);
                 Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
                 Thread.Sleep(100);
-                Define.StartButtonDouble = false;
                 Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");
             }
         }

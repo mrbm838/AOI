@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
@@ -13,13 +14,13 @@ namespace MyTools
     public class SerialPort_232
     {
         #region 串口1 IO板
-        public void loadSerialPort1(MainForm form, RichTextBox richTextBox)
+        public void loadSerialPort1(IniFile myIniFile, Action<string, Color> AddToQueue)
         {
-            Define.PortName[0] = form.myIniFile.IniReadValue("COM Port1", "COM Port");
-            Define.PortParity[0] = form.myIniFile.IniReadValue("COM Port1", "Parity");
-            Define.PortStopBits[0] = form.myIniFile.IniReadValue("COM Port1", "StopBits");
-            Define.PortBaudRate[0] = int.Parse(form.myIniFile.IniReadValue("COM Port1", "BaudRate"));
-            Define.PortDataBits[0] = int.Parse(form.myIniFile.IniReadValue("COM Port1", "DataBits"));
+            Define.PortName[0] = myIniFile.IniReadValue("COM Port1", "COM Port");
+            Define.PortParity[0] = myIniFile.IniReadValue("COM Port1", "Parity");
+            Define.PortStopBits[0] = myIniFile.IniReadValue("COM Port1", "StopBits");
+            Define.PortBaudRate[0] = int.Parse(myIniFile.IniReadValue("COM Port1", "BaudRate"));
+            Define.PortDataBits[0] = int.Parse(myIniFile.IniReadValue("COM Port1", "DataBits"));
 
             Define.sp1.PortName = Define.PortName[0];//名字
             //Define.sp1.Parity = (Parity)Enum.Parse(typeof(Parity), Define.PortParity[0]);
@@ -80,14 +81,13 @@ namespace MyTools
                 Thread.Sleep(100);
                 Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
                 Thread.Sleep(100);
-                Define.StartButtonDouble = false;
                 Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");
                 //ThreadRunIO.Start();
             }
             catch (Exception)
             {
                 bIOOpened = false;
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + Define.PortName[0] + "端口不存在或者被占用" + "\r\n");
+                AddToQueue(Define.PortName[0] + "端口不存在或者被占用", Color.Red);
             }
 
         }
@@ -112,13 +112,13 @@ namespace MyTools
 
         #region 串口2 扫码枪
 
-        public void loadSerialPort2(MainForm form, RichTextBox richTextBox)
+        public void loadSerialPort2(IniFile myIniFile, Action<string, Color> AddToQueue)
         {
-            Define.PortName[1] = form.myIniFile.IniReadValue("COM Port2", "COM Port");
-            Define.PortParity[1] = form.myIniFile.IniReadValue("COM Port2", "Parity");
-            Define.PortStopBits[1] = form.myIniFile.IniReadValue("COM Port2", "StopBits");
-            Define.PortBaudRate[1] = int.Parse(form.myIniFile.IniReadValue("COM Port2", "BaudRate"));
-            Define.PortDataBits[1] = int.Parse(form.myIniFile.IniReadValue("COM Port2", "DataBits"));
+            Define.PortName[1] = myIniFile.IniReadValue("COM Port2", "COM Port");
+            Define.PortParity[1] = myIniFile.IniReadValue("COM Port2", "Parity");
+            Define.PortStopBits[1] = myIniFile.IniReadValue("COM Port2", "StopBits");
+            Define.PortBaudRate[1] = int.Parse(myIniFile.IniReadValue("COM Port2", "BaudRate"));
+            Define.PortDataBits[1] = int.Parse(myIniFile.IniReadValue("COM Port2", "DataBits"));
 
             Define.sp2.PortName = Define.PortName[1];//名字
 
@@ -175,7 +175,7 @@ namespace MyTools
             catch (Exception)
             {
                 bScanOpened = false;
-                richTextBox.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "   " + Define.PortName[1] + "端口不存在或者被占用" + "\r\n");
+                AddToQueue(Define.PortName[1] + "端口不存在或者被占用", Color.Red);
             }
         }
         public string strBackSN = "";

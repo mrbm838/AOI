@@ -244,8 +244,6 @@ D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.PMAlign.Controls.dll
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.PMAlign.dll
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.ToolGroup.Controls.dll
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.ToolGroup.dll
-D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MvCameraControl.Net.dll
-D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\ToolTotal.dll
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.Interop.Core.dll
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.Core.dll
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.dll
@@ -268,7 +266,6 @@ D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.Display.Controls.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.FGGigE.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.PMAlign.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.ToolGroup.xml
-D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MvCameraControl.Net.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.Core.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.Display.Controls.xml
@@ -276,7 +273,6 @@ D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.Graphic.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.ImageProcessing.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.ImageFile.xml
 D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.Inspection.xml
-D:\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.csprojResolveAssemblyReference.cache
 D:\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.CameraForm.resources
 D:\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.ChangePassword.resources
 D:\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.LightSourceControl.resources
@@ -333,7 +329,6 @@ E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.Visi
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.FGGigE.xml
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.PMAlign.xml
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro.ToolGroup.xml
-E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MvCameraControl.Net.xml
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.Core.xml
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.xml
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\bin\x64\Debug\Cognex.VisionPro3D.Display.Controls.xml
@@ -359,3 +354,4 @@ E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.csp
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.csproj.CopyComplete
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.exe
 E:\Cowain\2328-334&407&500\AOI\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.pdb
+D:\AOI_Reduce_Axis\MyTools\obj\x64\Debug\MyTools.csprojResolveAssemblyReference.cache

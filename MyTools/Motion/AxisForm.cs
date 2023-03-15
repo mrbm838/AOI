@@ -86,7 +86,7 @@ namespace SingleAxisMotion
                 _myIniFile.IniWriteValue("Axis", "PointT_Enable", _motion.PointsArray[2, 0]);
                 _myIniFile.IniWriteValue("Axis", "PointT_Pos", _motion.PointsArray[2, 1]);
 
-                TextBox_PointPos.Text = _motion.PointsArray[ComboBox_Point.SelectedIndex, 0];
+                TextBox_PointPos.Text = _motion.PointsArray[ComboBox_Point.SelectedIndex, 1];
                 result = true;
             }
             MessageBox.Show(result ? "保存成功" : "保存失败");
@@ -199,7 +199,7 @@ namespace SingleAxisMotion
         private void Button_MovePoint_Click(object sender, EventArgs e)
         {
             //if (!_motion.IsMotorServoOn) { return; }
-            _motion.SingleMotor.AbsMove(Convert.ToDouble(_motion.PointsArray[ComboBox_Point.SelectedIndex, 0]), 25);
+            _motion.SingleMotor.AbsMove(Convert.ToDouble(_motion.PointsArray[ComboBox_Point.SelectedIndex, 1]), 25);
         }
 
         private void ComboBox_Point_SelectedIndexChanged(object sender, EventArgs e)

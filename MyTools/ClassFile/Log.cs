@@ -17,7 +17,7 @@ namespace MyTools.ClassFile
 
         private string basepath = AppDomain.CurrentDomain.BaseDirectory;
 
-        public string SNstr = "";
+        public string SN = "";
 
         [DllImport("kernel32")]
         private static extern long WritePrivateProfileString(string section, string key, string val, string filePath);
@@ -25,7 +25,7 @@ namespace MyTools.ClassFile
         [DllImport("kernel32")]
         private static extern int GetPrivateProfileString(string section, string key, string def, StringBuilder retVal, int size, string filePath);
 
-        public void save(string str)
+        public void SaveMsgInner(string str)
         {
             basepath = AppDomain.CurrentDomain.BaseDirectory;
             basepath = basepath + "Log\\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
@@ -34,16 +34,16 @@ namespace MyTools.ClassFile
             write.Close();
         }
 
-        public void saveSN(string str, string path, string name)
+        public void SaveSNInner(string str, string fileName)
         {
             basepath = AppDomain.CurrentDomain.BaseDirectory;
-            basepath = basepath + "Log\\SN-" + path + ".txt";
+            basepath = basepath + "Log\\SN-" + fileName + ".txt";
             write = new StreamWriter(basepath, append: true);
             write.Write(str);
             write.Close();
         }
 
-        public void SaveSN(string sn, string str)
+        public void SaveTotalProduct(string sn, string str)
         {
             basepath = "D:\\Log\\" + DateTime.Now.ToString("yyyy-MM-dd") + "\\";
             if (!Directory.Exists(basepath))
@@ -57,12 +57,12 @@ namespace MyTools.ClassFile
             write.Close();
         }
 
-        public int Read(string SN, string path)
+        public int ReadNumOfSN(string SN, string fileName)
         {
             basepath = AppDomain.CurrentDomain.BaseDirectory;
-            basepath = basepath + "Log\\SN-" + path + ".txt";
-            SNstr = File.ReadAllText(basepath);
-            string[] array = SNstr.Split(',');
+            basepath = basepath + "Log\\SN-" + fileName + ".txt";
+            this.SN = File.ReadAllText(basepath);
+            string[] array = this.SN.Split(',');
             int result = 0;
             for (int i = 0; i < array.Length; i++)
             {
@@ -71,16 +71,15 @@ namespace MyTools.ClassFile
                     result++;
                 }
             }
-
             return result;
         }
 
-        public int ReadSNo(string SN, string path)
+        public int ReadPosOfSN(string SN, string fileName)
         {
             basepath = AppDomain.CurrentDomain.BaseDirectory;
-            basepath = basepath + "Log\\SN-" + path + ".txt";
-            SNstr = File.ReadAllText(basepath);
-            string[] array = SNstr.Split(',');
+            basepath = basepath + "Log\\SN-" + fileName + ".txt";
+            this.SN = File.ReadAllText(basepath);
+            string[] array = this.SN.Split(',');
             for (int i = 0; i < array.Length - 1; i++)
             {
                 if (SN == array[i])
@@ -88,11 +87,10 @@ namespace MyTools.ClassFile
                     return i;
                 }
             }
-
             return 0;
         }
 
-        public void save2(string str, string sn)
+        public void SaveWorkData(string str, string sn)
         {
             basepath = "E:\\WorkData";
             if (!File.Exists(basepath))
@@ -106,7 +104,7 @@ namespace MyTools.ClassFile
             write.Close();
         }
 
-        public void save5(string str, string path)
+        public void SaveCSV(string str, string path)
         {
             write = new StreamWriter(path, append: true);
             write.Write(str + "\r\n");

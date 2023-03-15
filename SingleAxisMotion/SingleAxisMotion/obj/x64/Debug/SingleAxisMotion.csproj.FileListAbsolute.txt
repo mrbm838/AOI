@@ -87,3 +87,6 @@ D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMot
 D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\Cowain_Form.FormView.frm_LoadingDlg.resources
 D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.Properties.Resources.resources
 D:\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.csproj.GenerateResource.Cache
+G:\2328-334&407&500\AOI\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\bin\x64\Debug\SingleAxisMotion.exe.config
+G:\2328-334&407&500\AOI\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.exe
+G:\2328-334&407&500\AOI\AOI_Reduce_Axis\SingleAxisMotion\SingleAxisMotion\obj\x64\Debug\SingleAxisMotion.pdb

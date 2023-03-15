@@ -40,11 +40,10 @@
             this.label_LoginUser = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Timer_FlashValue = new System.Windows.Forms.Timer(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
             this.OPTLightOFF = new System.Windows.Forms.PictureBox();
@@ -96,7 +95,6 @@
             this.passnum = new System.Windows.Forms.Label();
             this.passlabel = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.totallab = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.Production = new System.Windows.Forms.Button();
@@ -234,7 +232,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -395,25 +392,27 @@
             this.label2.TabIndex = 53;
             this.label2.Text = "Tip AOI";
             // 
-            // timer1
+            // Timer_FlashValue
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            this.Timer_FlashValue.Enabled = true;
+            this.Timer_FlashValue.Interval = 200;
+            this.Timer_FlashValue.Tick += new System.EventHandler(this.Timer_FlashValue_Tick);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox15);
             this.groupBox2.Controls.Add(this.groupBox9);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(993, 3);
+            this.groupBox2.Location = new System.Drawing.Point(1143, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(504, 814);
+            this.groupBox2.Size = new System.Drawing.Size(354, 829);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "状态栏";
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.richTextBox1);
+            this.groupBox15.Controls.Add(this.richTextBox);
             this.groupBox15.Location = new System.Drawing.Point(6, 25);
             this.groupBox15.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox15.Name = "groupBox15";
@@ -423,15 +422,15 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Message";
             // 
-            // richTextBox1
+            // richTextBox
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.richTextBox1.Location = new System.Drawing.Point(2, 16);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(489, 779);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.richTextBox.Location = new System.Drawing.Point(2, 16);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(489, 779);
+            this.richTextBox.TabIndex = 1;
+            this.richTextBox.Text = "";
             // 
             // groupBox9
             // 
@@ -729,11 +728,11 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(2, 490);
+            this.tabControl2.Location = new System.Drawing.Point(2, 498);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(488, 322);
+            this.tabControl2.Size = new System.Drawing.Size(563, 329);
             this.tabControl2.TabIndex = 21;
             // 
             // tabPage3
@@ -746,7 +745,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(480, 296);
+            this.tabPage3.Size = new System.Drawing.Size(555, 303);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "生产操作栏";
             // 
@@ -916,7 +915,7 @@
             this.AutoBtn.TabIndex = 1;
             this.AutoBtn.Text = "自动模式";
             this.AutoBtn.UseVisualStyleBackColor = true;
-            this.AutoBtn.Click += new System.EventHandler(this.AutoBtn_Click);
+            this.AutoBtn.Click += new System.EventHandler(this.AutoBtn_ClickAsync);
             // 
             // ManualBtn
             // 
@@ -938,11 +937,11 @@
             this.Parameter.Controls.Add(this.tabPage2);
             this.Parameter.Controls.Add(this.tabPage6);
             this.Parameter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Parameter.Location = new System.Drawing.Point(494, 490);
+            this.Parameter.Location = new System.Drawing.Point(569, 498);
             this.Parameter.Margin = new System.Windows.Forms.Padding(2);
             this.Parameter.Name = "Parameter";
             this.Parameter.SelectedIndex = 0;
-            this.Parameter.Size = new System.Drawing.Size(488, 322);
+            this.Parameter.Size = new System.Drawing.Size(563, 329);
             this.Parameter.TabIndex = 20;
             // 
             // tabPage5
@@ -955,7 +954,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(480, 296);
+            this.tabPage5.Size = new System.Drawing.Size(555, 303);
             this.tabPage5.TabIndex = 3;
             this.tabPage5.Text = "Main";
             // 
@@ -966,7 +965,6 @@
             this.groupBox1.Controls.Add(this.passnum);
             this.groupBox1.Controls.Add(this.passlabel);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.totallab);
             this.groupBox1.Controls.Add(this.label54);
             this.groupBox1.Controls.Add(this.Production);
@@ -1032,17 +1030,6 @@
             this.label24.TabIndex = 103;
             this.label24.Text = "产  量：";
             this.label24.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(36, 34);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 40;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // totallab
             // 
@@ -1204,7 +1191,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(480, 296);
+            this.tabPage4.Size = new System.Drawing.Size(555, 303);
             this.tabPage4.TabIndex = 2;
             this.tabPage4.Text = "View";
             // 
@@ -1456,7 +1443,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(480, 296);
+            this.tabPage1.Size = new System.Drawing.Size(555, 303);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manual";
             // 
@@ -1570,7 +1557,7 @@
             this.SNInput.Name = "SNInput";
             this.SNInput.Size = new System.Drawing.Size(98, 33);
             this.SNInput.TabIndex = 97;
-            this.SNInput.Text = "启用扫描";
+            this.SNInput.Text = "启用扫码";
             this.SNInput.UseVisualStyleBackColor = false;
             this.SNInput.Click += new System.EventHandler(this.SNInput_Click);
             // 
@@ -1768,7 +1755,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(480, 296);
+            this.tabPage2.Size = new System.Drawing.Size(555, 303);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "CCD Setting";
             // 
@@ -1998,7 +1985,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(480, 296);
+            this.tabPage6.Size = new System.Drawing.Size(555, 303);
             this.tabPage6.TabIndex = 4;
             this.tabPage6.Text = "Parameter";
             // 
@@ -2121,11 +2108,11 @@
             this.groupBox7.Controls.Add(this.textBoxFAI_5_180);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox7.Location = new System.Drawing.Point(494, 360);
+            this.groupBox7.Location = new System.Drawing.Point(569, 366);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(488, 126);
+            this.groupBox7.Size = new System.Drawing.Size(563, 128);
             this.groupBox7.TabIndex = 17;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "CCD2";
@@ -2301,11 +2288,11 @@
             this.groupBox6.Controls.Add(this.textBoxFAI_5_90);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox6.Location = new System.Drawing.Point(2, 360);
+            this.groupBox6.Location = new System.Drawing.Point(2, 366);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(488, 126);
+            this.groupBox6.Size = new System.Drawing.Size(563, 128);
             this.groupBox6.TabIndex = 16;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "CCD1";
@@ -2518,7 +2505,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 814);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1134, 829);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // cogRecordDisplay1
@@ -2536,7 +2523,7 @@
             this.cogRecordDisplay1.MouseWheelSensitivity = 1D;
             this.cogRecordDisplay1.Name = "cogRecordDisplay1";
             this.cogRecordDisplay1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("cogRecordDisplay1.OcxState")));
-            this.cogRecordDisplay1.Size = new System.Drawing.Size(486, 352);
+            this.cogRecordDisplay1.Size = new System.Drawing.Size(561, 358);
             this.cogRecordDisplay1.TabIndex = 2;
             this.cogRecordDisplay1.DoubleClick += new System.EventHandler(this.cogRecordDisplay1_DoubleClick_1);
             // 
@@ -2550,12 +2537,12 @@
             this.cogRecordDisplay2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cogRecordDisplay2.DoubleTapZoomCycleLength = 2;
             this.cogRecordDisplay2.DoubleTapZoomSensitivity = 2.5D;
-            this.cogRecordDisplay2.Location = new System.Drawing.Point(495, 3);
+            this.cogRecordDisplay2.Location = new System.Drawing.Point(570, 3);
             this.cogRecordDisplay2.MouseWheelMode = Cognex.VisionPro.Display.CogDisplayMouseWheelModeConstants.Zoom1;
             this.cogRecordDisplay2.MouseWheelSensitivity = 1D;
             this.cogRecordDisplay2.Name = "cogRecordDisplay2";
             this.cogRecordDisplay2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("cogRecordDisplay2.OcxState")));
-            this.cogRecordDisplay2.Size = new System.Drawing.Size(486, 352);
+            this.cogRecordDisplay2.Size = new System.Drawing.Size(561, 358);
             this.cogRecordDisplay2.TabIndex = 1;
             this.cogRecordDisplay2.DoubleClick += new System.EventHandler(this.cogRecordDisplay2_DoubleClick);
             // 
@@ -2565,12 +2552,10 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1500, 881);
-            this.ControlBox = false;
             this.Controls.Add(this.displayLayoutPanel);
             this.Controls.Add(this.panel_Tool);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel_Tool.ResumeLayout(false);
@@ -2578,7 +2563,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
@@ -2646,10 +2630,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Panel panel_Tool;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer Timer_FlashValue;
         private System.Windows.Forms.Label label_LoginUser;
         private System.Windows.Forms.Label label_DateTime;
         private System.Windows.Forms.Label label2;
@@ -2662,7 +2644,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.PictureBox OPTLightOFF;
@@ -2714,7 +2696,6 @@
         private System.Windows.Forms.Label passnum;
         private System.Windows.Forms.Label passlabel;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label totallab;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Button Production;

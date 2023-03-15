@@ -37,16 +37,15 @@ namespace MyTools
         public static string[] PortParity = new string[2];//Parity.None,Parity.Odd(奇校验)，Parity.Even（偶）
         public static int[] PortDataBits = new int[2];
 
-        public static bool StartButtonDouble;
-        public static bool SNOK;
-        public static bool Initialize=false;
+        public static bool BindingOK;
+        public static bool Initialize = false;
         public static bool ButtonDisabled = false;
-        public static bool 挡板状态;
+        public static bool DoubleButtonDown;
         public static bool 运行中;
         public static bool LimintChange = false;
 
-        public static double GapTL=0, GapTR=0, GapSL=0, GapSR=0, OffsetTL=0, OffsetTR=0, OffsetSL=0, OffsetSR=0;//测试结果
-        public static double FOffset0=0, FOffset90=0, FOffset180=0, FOffset270=0, FOffsetMAX=0;//CCD3测试结果
+        public static double GapTL = 0, GapTR = 0, GapSL = 0, GapSR = 0, OffsetTL = 0, OffsetTR = 0, OffsetSL = 0, OffsetSR = 0;//测试结果
+        public static double FOffset0 = 0, FOffset90 = 0, FOffset180 = 0, FOffset270 = 0, FOffsetMAX = 0;//CCD3测试结果
         public static string timeS, timeE;
         public static double[] TopSettingS = new double[12];
         public static double[] SideSettingS = new double[12];
@@ -71,8 +70,6 @@ namespace MyTools
         public static int MRRed;
         public static int MRGreen;
         public static int MRBlue;
-
-
 
         public static string 气缸 = "cy8";
         public static string 红灯 = "cy4";
