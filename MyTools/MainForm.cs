@@ -27,13 +27,9 @@ namespace MyTools
         public string imagepath;
         public string datapath;
         /// <summary>
-        /// 默然光源通讯端
+        /// Mac Mini端   
         /// </summary>
-        //NetClient myClient1 = new NetClient();
-        /// <summary>
-        /// Mac Mini端
-        /// </summary>
-        NetClient myClient2 = new NetClient();
+        readonly NetClient macClient = new NetClient();
         public SerialPort_232 com232 = new SerialPort_232();
         public StartForm startForm = new StartForm();
         public Thread ThreadRunStatus;//线程1
@@ -96,11 +92,6 @@ namespace MyTools
             InitializeComponent();
         }
 
-        private void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             if (!LoadVppSuccess)
@@ -134,8 +125,8 @@ namespace MyTools
             }
             else
             {
-                totaldatalab.Text = (double.Parse((totaldata / total).ToString("0.000")) * 100).ToString() + "%";
-                CLDataLB.Text = (double.Parse((passtotal / total).ToString("0.000")) * 100).ToString() + "%";
+                totaldatalab.Text = double.Parse((totaldata / total).ToString("0.000")) * 100 + "%";
+                CLDataLB.Text = double.Parse((passtotal / total).ToString("0.000")) * 100 + "%";
 
                 //添加PASS FAIL显示
                 passnum.Text = passtotal.ToString();
@@ -146,8 +137,6 @@ namespace MyTools
             Define.运行中 = false;
 
             AddToQueue("相机加载完成！", Color.Black);
-            //LightInitialize.RGBParamInitailize(this);
-            //LightInitialize.RGBConnect(this, myClient1, richTextBox1);//连接默然光源控制器
 
             com232.loadSerialPort1(myIniFile, AddToQueue);//加载IO串口
             com232.loadSerialPort2(myIniFile, AddToQueue);//加载扫码枪串口
@@ -157,8 +146,6 @@ namespace MyTools
             LightInitialize.OPTConnect(AddToQueue);//连接OPT光源控制器
             LightInitialize.OPTCloseT();
             LightInitialize.OPTCloseS();
-
-            //LightInitialize.MRCloseF(myClient1, richTextBox1);
 
             if (motion.SingleMotor.SetSevON(true))
             {
@@ -369,10 +356,10 @@ namespace MyTools
                             //Thread.Sleep(500);
                             try
                             {
-                                myClient2.StopConnect();
+                                macClient.StopConnect();
                                 Thread.Sleep(500);
 
-                                myClient2.Open("169.254.1.10", 1111);
+                                macClient.Open("169.254.1.10", 1111);
                                 AddToQueue("Mac mini尝试重新连接！", Color.Black);
                             }
                             catch { }
@@ -753,12 +740,12 @@ namespace MyTools
                             //ShowMsg3(FoxMes);
                             if (Define.GapTR.ToString() != "999" && Define.GapSR.ToString() != "999")
                             {
-                                myClient2.SN = Define.SN;
-                                myClient2.SendMsg(FoxMes);//上传Mac Mini
+                                macClient.SN = Define.SN;
+                                macClient.SendMsg(FoxMes);//上传Mac Mini
 
                                 string str = "";
                                 FoxMes = "";
-                                if (myClient2.ClientSocket.Connected && myClient2.connectOk && myClient2.TCPStatic)
+                                if (macClient.ClientSocket.Connected && macClient.connectOk && macClient.TCPStatic)
                                 {
                                     if (labelPassFail1.Text == "PASS")//视觉检测通过
                                     {
@@ -851,8 +838,8 @@ namespace MyTools
                     Define.sp1.Write("Cmd_On_" + Define.气缸 + "\r\n");
                     Thread.Sleep(50);
                 }
-                myClient2.SN = Define.SN;
-                myClient2.SendMsg("{\r\n" + Define.SN + "@sfc_unit_check\r\n}\r\n");
+                macClient.SN = Define.SN;
+                macClient.SendMsg("{\r\n" + Define.SN + "@sfc_unit_check\r\n}\r\n");
                 Thread.Sleep(1200);
             }
 
@@ -1679,7 +1666,7 @@ namespace MyTools
             try
             {
                 //myClient1.StopConnect();
-                myClient2.StopConnect();
+                macClient.StopConnect();
                 Timer_FlashValue.Stop();
 
                 Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
