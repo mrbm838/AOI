@@ -704,7 +704,7 @@ namespace MyTools
             {
                 if (Define.BindingOK && Define.DoubleButtonDown && bReturned || bRunEmpty)
                 {
-                    if (bRunEmpty) { AddToQueue("当前状态是空跑.............", Color.Red);}
+                    if (bRunEmpty) { AddToQueue("当前状态是空跑.............", Color.Red); }
                     ScanIOCard = false;
                     Thread.Sleep(50);
                     Define.DoubleButtonDown = false;
@@ -718,21 +718,24 @@ namespace MyTools
                     }
                     Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升   
                     Thread.Sleep(50);
-
-                    stop_time_milli = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
-                    label_CT.Text = "CT:" + ((stop_time_milli - start_time_milli) / 1000).ToString("0.00") + "S";
-
-                    stopTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
-                    SaveAndUploadPicture(Define.SN, cogRecordDisplay1.Image, "CCD1");
-                    SaveAndUploadPicture(Define.SN, cogRecordDisplay2.Image, "CCD2");
                     while (!com232.StrBack.Contains(Define.气缸.Substring(2, 1) + " Off Pass!"))
                     {
                         Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升    
                         Thread.Sleep(50);
                     }
 
-                    GenerateMESData();
+                    stop_time_milli = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
+                    label_CT.Text = "CT:" + ((stop_time_milli - start_time_milli) / 1000).ToString("0.00") + "S";
+
+                    stopTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                    if (!bRunEmpty) // 不是空跑则保存并上传图片、生成MES信息
+                    {
+                        SaveAndUploadPicture(Define.SN, cogRecordDisplay1.Image, "CCD1");
+                        SaveAndUploadPicture(Define.SN, cogRecordDisplay2.Image, "CCD2");
+                        GenerateMESData();
+                    }
+
                     ScanIOCard = true;
                     Thread.Sleep(50);
                     if (Define.SN.Length == intSNLength)
@@ -1900,10 +1903,11 @@ namespace MyTools
 
         private void SaveAndUploadPicture(string sn, ICogImage image, string CCDNo)
         {
-            int width = 0, heigth = 0; double size = 0;
+            int width = 0, height = 0;
+            double size = 0;
             Bitmap myImage = image.ToBitmap();
             string directory = imagepath + CCDNo + "\\" + DateTime.Now.ToString("yyyy-MM-dd") + "\\";
-            string strpath = @"\\169.254.1.10\Public\blobs\" + sn + "//";
+            string path = @"\\169.254.1.10\Public\blobs\" + sn + "//";
 
             try
             {
@@ -1918,9 +1922,9 @@ namespace MyTools
                     SaveMsg(CCDNo + "-SN:" + sn + "存图成功");
                     if (sn.Length == intSNLength && Define.GapTR.ToString() != "999" && Define.GapSR.ToString() != "999" && bUploadPDCA) //添加判断 是否上传PDCA系统                        
                     {//当SN正常，且检测数据正常，则保持图片至Mac mini 
-                        Directory.CreateDirectory(strpath);
-                        AOIMethod.VaryQualityLevel(directory + sn + ".jpg", strpath + sn + "-" + CCDNo + ".jpg", ref width, ref heigth, ref size);
-                        SaveMsg(CCDNo + "-SN:" + sn + "-压缩并共享至Mac mini成功!" + "压缩后尺寸(像素)：" + heigth + " X " + width + "," + "占用空间：" + size.ToString() + "KB");
+                        Directory.CreateDirectory(path);
+                        AOIMethod.VaryQualityLevel(directory + sn + ".jpg", path + sn + "-" + CCDNo + ".jpg", ref width, ref height, ref size);
+                        SaveMsg(CCDNo + "-SN:" + sn + "-压缩并共享至Mac mini成功!" + "压缩后尺寸(像素)：" + height + " X " + width + "," + "占用空间：" + size.ToString() + "KB");
                     }
                 }
                 else
