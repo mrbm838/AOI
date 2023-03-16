@@ -17,7 +17,7 @@ namespace MyTools.ClassFile
 
         private string basepath = AppDomain.CurrentDomain.BaseDirectory;
 
-        public string SN = "";
+        public string SNFileNum = "";
 
         [DllImport("kernel32")]
         private static extern long WritePrivateProfileString(string section, string key, string val, string filePath);
@@ -61,8 +61,8 @@ namespace MyTools.ClassFile
         {
             basepath = AppDomain.CurrentDomain.BaseDirectory;
             basepath = basepath + "Log\\SN-" + fileName + ".txt";
-            this.SN = File.ReadAllText(basepath);
-            string[] array = this.SN.Split(',');
+            this.SNFileNum = File.ReadAllText(basepath);
+            string[] array = this.SNFileNum.Split(',');
             int result = 0;
             for (int i = 0; i < array.Length; i++)
             {
@@ -78,8 +78,8 @@ namespace MyTools.ClassFile
         {
             basepath = AppDomain.CurrentDomain.BaseDirectory;
             basepath = basepath + "Log\\SN-" + fileName + ".txt";
-            this.SN = File.ReadAllText(basepath);
-            string[] array = this.SN.Split(',');
+            this.SNFileNum = File.ReadAllText(basepath);
+            string[] array = this.SNFileNum.Split(',');
             for (int i = 0; i < array.Length - 1; i++)
             {
                 if (SN == array[i])

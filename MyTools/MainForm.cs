@@ -49,6 +49,7 @@ namespace MyTools
         bool DayOrNightRun = true;
         bool PingResult = false;
         int intSNLength = 12;
+        bool Manual = false, Auto = false;
 
         bool bUploadPDCA = true;
         private Motion motion;
@@ -143,7 +144,6 @@ namespace MyTools
             com232.loadSerialPort1(myIniFile, AddToQueue);//加载IO串口
             com232.loadSerialPort2(myIniFile, AddToQueue);//加载扫码枪串口
             AddToQueue("扫码枪加载完成！", Color.Black);
-            //OPTController = new OPTControllerAPI();//连接光源控制器
             LightInitialize.LightParamInitailize(myIniFile);
             LightInitialize.OPTConnect(AddToQueue);//连接OPT光源控制器
             LightInitialize.OPTCloseT();
@@ -281,7 +281,6 @@ namespace MyTools
         #region 按钮事件
         private void Timer_FlashValue_Tick(object sender, EventArgs e)
         {
-            //this.label_DateTime.Text = DateTime.Now.ToString();
             if (!Define.LimintChange)
             {
                 Define.LimintChange = true;
@@ -321,29 +320,55 @@ namespace MyTools
             {
                 richTextBox.Clear();
             }
+
+            if (bUploadPDCA)
+            {
+                if (!PingResult)
+                {
+                    if (label_MacState.Text != "Mac mini 掉线")
+                    {
+                        label_MacState.Text = "Mac mini 掉线";
+                        AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
+                    }
+                }
+                else
+                {
+                    if (label_MacState.Text != "Mac mini 上传")
+                    {
+                        label_MacState.Text = "Mac mini 上传";
+                        AOIMethod.ViewImage(pictureBox4, pathpicture + "GreenOn2.bmp");
+                    }
+                }
+            }
+            else
+            {
+                if (label_MacState.Text != "Mac mini 不上传")
+                {
+                    label_MacState.Text = "Mac mini 不上传";
+                    AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
+                }
+            }
         }
 
-        private void ShowTimeAndCheckPDCA()
+        private void RecodeTimeAndCheckPDCA()
         {
             while (true)
             {
                 Thread.Sleep(5000);
                 try
                 {
-                    if (DayOrNightRun)
+                    if (DateTime.Now.Hour > int.Parse(myIniFile.IniReadValue("Startup", "Day")) &&
+                        DateTime.Now.Hour < int.Parse(myIniFile.IniReadValue("Startup", "Night")))
                     {
-                        if (DateTime.Now.Hour > int.Parse(myIniFile.IniReadValue("Startup", "Day")) && DateTime.Now.Hour < int.Parse(myIniFile.IniReadValue("Startup", "Night")))
-                        {
-                            strTime = DateTime.Now.ToString("yyyy-MM-dd") + "-Day";
-                        }
-                        else if (DateTime.Now.Hour > int.Parse(myIniFile.IniReadValue("Startup", "Night")))
-                        {
-                            strTime = DateTime.Now.ToString("yyyy-MM-dd") + "-Night";
-                        }
-                        else
-                        {
-                            strTime = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd") + "-Night";
-                        }
+                        strTime = DateTime.Now.ToString("yyyy-MM-dd") + "-Day";
+                    }
+                    else if (DateTime.Now.Hour > int.Parse(myIniFile.IniReadValue("Startup", "Night")))
+                    {
+                        strTime = DateTime.Now.ToString("yyyy-MM-dd") + "-Night";
+                    }
+                    else
+                    {
+                        strTime = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd") + "-Night";
                     }
 
                     if (bUploadPDCA)
@@ -352,10 +377,7 @@ namespace MyTools
                         Thread.Sleep(2000);
                         if (!PingResult)
                         {
-                            label25.Text = "Mac mini 掉线";
-                            AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
                             AddToQueue("Mac mini断连！", Color.Red);
-                            //Thread.Sleep(500);
                             try
                             {
                                 macClient.StopConnect();
@@ -364,27 +386,17 @@ namespace MyTools
                                 macClient.Open("169.254.1.10", 1111);
                                 AddToQueue("Mac mini尝试重新连接！", Color.Black);
                             }
-                            catch { }
-                        }
-                        else
-                        {
-                            if (label25.Text != "Mac mini 上传")
+                            catch
                             {
-                                label25.Text = "Mac mini 上传";
-                                AOIMethod.ViewImage(pictureBox4, pathpicture + "GreenOn2.bmp");
+                                // ignored
                             }
                         }
                     }
-                    else
-                    {
-                        if (label25.Text != "Mac mini 不上传")
-                        {
-                            label25.Text = "Mac mini 不上传";
-                            AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
-                        }
-                    }
                 }
-                catch { }
+                catch
+                {
+                    // ignored
+                }
 
                 if (bDelPic)
                 {
@@ -404,7 +416,6 @@ namespace MyTools
                 Thread.Sleep(50);
                 try
                 {
-
                     if (myIniFile.IniReadValue("Startup", "Statue") == "1")
                     {
                         label_LoginUser.Text = "操作员";
@@ -448,8 +459,6 @@ namespace MyTools
                         Thread.Sleep(50);
                     }
 
-                    if (Days.Text == "" || int.Parse(Days.Text) <= 0 || Days.Text.Contains("."))
-                        Days.Text = "50";
                     if (LoosenCh.Checked)
                         myIniFile.IniWriteValue("Startup", "bc", "1");
                     else
@@ -464,9 +473,7 @@ namespace MyTools
                 }
                 catch
                 {
-                    //Define.sp1.Close();
-                    //Thread.Sleep(5);
-                    //Define.sp1.Open();
+                    //ignore
                 }
             }
         }
@@ -649,7 +656,7 @@ namespace MyTools
             RemoteIOStatus = new Thread(StartRun);
             RemoteIOStatus.IsBackground = true;
             RemoteIOStatus.Start();
-            ThreadRunStatus = new Thread(new ThreadStart(ShowTimeAndCheckPDCA));
+            ThreadRunStatus = new Thread(new ThreadStart(RecodeTimeAndCheckPDCA));
             ThreadRunStatus.IsBackground = true;
             ThreadRunStatus.Start();
             ThreadRunIO = new Thread(new ThreadStart(CheckRoleAndHandleCOMData));
@@ -859,14 +866,19 @@ namespace MyTools
             {
                 if (motion.PointsArray[i, 0] == "1")
                 {
-                    motion.SingleMotor.AbsMove(Convert.ToDouble(motion.PointsArray[i, 1]), 25);
+                    double pos = Convert.ToDouble(motion.PointsArray[i, 1]);
+                    motion.SingleMotor.AbsMove(pos, 65);
+                    while (motion.SingleMotor.GetPosition() - pos > 0.1)
+                    {
+                        Thread.Sleep(100);
+                    }
                     VppRunFlow();
                 }
             }
 
             //轴回原
-            Thread.Sleep(1000);
-            motion.SingleMotor.AbsMove(0, 25);
+            Thread.Sleep(100);
+            motion.SingleMotor.AbsMove(0, 65);
 
             Define.运行中 = false;
 
@@ -1243,17 +1255,17 @@ namespace MyTools
             totallab.Text = total.ToString();
         }
 
-        public void SaveSNInner(string SN)
+        private void SaveSNInner(string SN)
         {
             log.SaveSNInner(SN + ',', strTime);
         }
 
-        public int ReadNumOfSN(string SN)
+        private int ReadNumOfSN(string SN)
         {
             return log.ReadNumOfSN(SN, strTime);
         }
 
-        public int ReadPosOfSN(string str)
+        private int ReadPosOfSN(string str)
         {
             return log.ReadPosOfSN(str, strTime);
         }
@@ -1665,25 +1677,29 @@ namespace MyTools
             }
             MES.SajetTransClose();
             if (File.Exists(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt"))
-                if (log.SN.Length > File.ReadAllText(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt").Length)
-                    SaveSNInner(log.SN);
-            myIniFile.IniWriteValue("Startup", "Statue", "1");//复位软件状态  
-            //LightInitialize.MRCloseF(myClient1, richTextBox1);
+            {
+                if (log.SNFileNum.Length > File.ReadAllText(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt").Length)
+                {
+                    SaveSNInner(log.SNFileNum);
+                }
+            }
+            myIniFile.IniWriteValue("Startup", "Statue", "1");//复位软件状态
             LightInitialize.OPTCloseT();
             LightInitialize.OPTCloseS();
             try
             {
-                //myClient1.StopConnect();
                 macClient.StopConnect();
                 Timer_FlashValue.Stop();
 
                 Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
-                Thread.Sleep(100);
+                Thread.Sleep(30);
                 Define.sp1.Write("Cmd_Off_" + Define.黄灯 + "\r\n");
-                Thread.Sleep(100);
+                Thread.Sleep(30);
                 Define.sp1.Write("Cmd_Off_" + Define.绿灯 + "\r\n");
-                Thread.Sleep(100);
+                Thread.Sleep(30);
                 Define.sp1.Write("Cmd_Off_" + Define.蜂鸣 + "\r\n");
+                Define.sp1.Close();
+                Define.sp2.Close();
                 CogFrameGrabberGigEs ff = new CogFrameGrabberGigEs();
                 if (ff.Count > 0)
                 {
@@ -1699,7 +1715,12 @@ namespace MyTools
             {
                 SaveMsg("相机释放失败");
             }
-            this.Close();
+
+            foreach (Form mdiChild in this.MdiChildren)
+            {
+                mdiChild.Close();
+            }
+            Close();
         }
 
         private void RGBSaveBtn_Click(object sender, EventArgs e)
@@ -1715,7 +1736,6 @@ namespace MyTools
 
         private void ChangeUserLabel_Click(object sender, EventArgs e)
         {
-
             if (myIniFile.IniReadValue("Startup", "Statue") == "1")
             {
                 new logon().ShowDialog(this);
@@ -1740,8 +1760,6 @@ namespace MyTools
             }
 
         }
-        bool Manual = false, Auto = false;
-
 
         private async void AutoBtn_ClickAsync(object sender, EventArgs e)
         {
@@ -1864,14 +1882,17 @@ namespace MyTools
             ngnum.Text = "0";
             if (File.Exists(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt"))
             {
-                File.Copy(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt", System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + "-" + DateTime.Now.ToString("HH-mm-ss") + ".txt");
+                File.Copy(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt",
+                    System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + "-" + DateTime.Now.ToString("HH-mm-ss") + ".txt");
                 File.Delete(System.AppDomain.CurrentDomain.BaseDirectory + "Log\\SN-" + strTime + ".txt");
             }
         }
+
         private void ConnectTool_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.BaseDirectory + "Tool");//打开文件夹
         }
+
         private void ManualBtn_Click(object sender, EventArgs e)
         {
             if (myIniFile.IniReadValue("Startup", "Statue") != "1")
@@ -1945,14 +1966,14 @@ namespace MyTools
             //LightInitialize.MRCloseF(myClient1, richTextBox1);
             LightInitialize.OPTCloseT();
             LightInitialize.OPTCloseS();
-            myIniFile.IniWriteValue("Startup", "Statue", "1");//复位软件状态  
-            Define.sp1.Close();
-            Define.sp2.Close();
-            motion.SingleMotor.SetSevON(false);
+            myIniFile.IniWriteValue("Startup", "Statue", "1");//复位软件状态
             Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
             Define.sp1.Write("Cmd_Off_" + Define.黄灯 + "\r\n");
             Define.sp1.Write("Cmd_Off_" + Define.绿灯 + "\r\n");
             Define.sp1.Write("Cmd_Off_" + Define.蜂鸣 + "\r\n");
+            Define.sp1.Close();
+            Define.sp2.Close();
+            motion.SingleMotor.SetSevON(false);
         }
 
         private void ChangePSW_Click(object sender, EventArgs e)
@@ -2011,7 +2032,7 @@ namespace MyTools
             {
                 but_PDCA.BackColor = Color.LawnGreen;
                 but_PDCA.Text = "关闭上传PDCA";
-                label25.Text = "Mac mini 不上传";
+                label_MacState.Text = "Mac mini 不上传";
                 AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
                 bUploadPDCA = false;
             }
@@ -2019,7 +2040,7 @@ namespace MyTools
             {
                 but_PDCA.BackColor = Color.LightGray;
                 but_PDCA.Text = "开启上传PDCA";
-                label25.Text = "Mac mini 上传";
+                label_MacState.Text = "Mac mini 上传";
                 AOIMethod.ViewImage(pictureBox4, pathpicture + "GreenOn2.bmp");
                 bUploadPDCA = true;
             }

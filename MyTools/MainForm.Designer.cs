@@ -34,7 +34,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.label_MacState = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label_DateTime = new System.Windows.Forms.Label();
             this.label_LoginUser = new System.Windows.Forms.Label();
@@ -289,7 +289,7 @@
             this.panel_Tool.Controls.Add(this.pictureBox5);
             this.panel_Tool.Controls.Add(this.pictureBox4);
             this.panel_Tool.Controls.Add(this.label28);
-            this.panel_Tool.Controls.Add(this.label25);
+            this.panel_Tool.Controls.Add(this.label_MacState);
             this.panel_Tool.Controls.Add(this.label41);
             this.panel_Tool.Controls.Add(this.label_DateTime);
             this.panel_Tool.Controls.Add(this.label_LoginUser);
@@ -328,14 +328,14 @@
             this.label28.TabIndex = 57;
             this.label28.Text = "S  F  C 上传";
             // 
-            // label25
+            // label_MacState
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(1209, 20);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(125, 18);
-            this.label25.TabIndex = 56;
-            this.label25.Text = "Mac mini 上传";
+            this.label_MacState.AutoSize = true;
+            this.label_MacState.Location = new System.Drawing.Point(1209, 20);
+            this.label_MacState.Name = "label_MacState";
+            this.label_MacState.Size = new System.Drawing.Size(125, 18);
+            this.label_MacState.TabIndex = 56;
+            this.label_MacState.Text = "Mac mini 上传";
             // 
             // label41
             // 
@@ -2640,7 +2640,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label_MacState;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox15;
