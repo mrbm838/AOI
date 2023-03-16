@@ -37,8 +37,8 @@ namespace MyTools
         public Thread RemoteIOStatus;//读远程IO线程
         private delegate void FlushClient();//线程代理
         string pathpicture;
-        double stop_time;
-        double start_time;
+        double stop_time_milli;
+        double start_time_milli;
         string startTime;
         string stopTime;
         double total, totaldata, passtotal;
@@ -58,6 +58,8 @@ namespace MyTools
         private bool bReturned;
         private bool bScanCode = true;
         private ConcurrentQueue<Dictionary<string, Color>> MessageQueue = new ConcurrentQueue<Dictionary<string, Color>>();
+        private bool bDelPic;
+        private bool bRunEmpty;
 
         public MainForm()
         {
@@ -384,11 +386,14 @@ namespace MyTools
                 }
                 catch { }
 
-                AOIMethod.DeleteOldFiles(imagepath + "CCD1\\", int.Parse(Days.Text.Trim()));
-                AOIMethod.DeleteOldFiles(imagepath + "CCD2\\", int.Parse(Days.Text.Trim()));
-                AOIMethod.DeleteOldFiles(imagepath + "CCD3\\", int.Parse(Days.Text.Trim()));
-                AOIMethod.DeleteOldLog(Application.StartupPath + "\\Log", int.Parse(LogDays.Text.Trim()));
-                AOIMethod.DeleteOldFiles("D:\\Log", int.Parse(Days.Text.Trim()));
+                if (bDelPic)
+                {
+                    AOIMethod.DeleteOldFiles(imagepath + "CCD1\\", int.Parse(Days.Text.Trim()));
+                    AOIMethod.DeleteOldFiles(imagepath + "CCD2\\", int.Parse(Days.Text.Trim()));
+                    AOIMethod.DeleteOldFiles(imagepath + "CCD3\\", int.Parse(Days.Text.Trim()));
+                    AOIMethod.DeleteOldLog(Application.StartupPath + "\\Log", int.Parse(LogDays.Text.Trim()));
+                    AOIMethod.DeleteOldFiles("D:\\Log", int.Parse(Days.Text.Trim()));
+                }
             }
         }
 
@@ -671,7 +676,7 @@ namespace MyTools
             }
         }
 
-        public void StartRun()
+        private void StartRun()
         {
             while (true)
             {
@@ -697,111 +702,108 @@ namespace MyTools
             }
             else
             {
-                if (Define.BindingOK)
+                if (Define.BindingOK && Define.DoubleButtonDown && bReturned || bRunEmpty)
                 {
-                    if (Define.DoubleButtonDown && bReturned)
+                    if (bRunEmpty) { AddToQueue("当前状态是空跑.............", Color.Red);}
+                    ScanIOCard = false;
+                    Thread.Sleep(50);
+                    Define.DoubleButtonDown = false;
+                    if (check200.Checked)
                     {
-                        ScanIOCard = false;
+                        RunToCheck200();
+                    }
+                    else
+                    {
+                        Run();
+                    }
+                    Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升   
+                    Thread.Sleep(50);
+
+                    stop_time_milli = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
+                    label_CT.Text = "CT:" + ((stop_time_milli - start_time_milli) / 1000).ToString("0.00") + "S";
+
+                    stopTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                    SaveAndUploadPicture(Define.SN, cogRecordDisplay1.Image, "CCD1");
+                    SaveAndUploadPicture(Define.SN, cogRecordDisplay2.Image, "CCD2");
+                    while (!com232.StrBack.Contains(Define.气缸.Substring(2, 1) + " Off Pass!"))
+                    {
+                        Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升    
                         Thread.Sleep(50);
-                        Define.DoubleButtonDown = false;
-                        if (check200.Checked)
+                    }
+
+                    GenerateMESData();
+                    ScanIOCard = true;
+                    Thread.Sleep(50);
+                    if (Define.SN.Length == intSNLength)
+                    {
+                        CL++;
+
+                        myIniFile.IniWriteValue("Startup", "LabelCL", CL.ToString());
+                        //ShowMsg3(FoxMes);
+                        if (Define.GapTR.ToString() != "999" && Define.GapSR.ToString() != "999")
                         {
-                            RunToCheck200();
-                        }
-                        else
-                        {
-                            Run();
-                        }
-                        Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升   
-                        Thread.Sleep(50);
+                            macClient.SN = Define.SN;
+                            macClient.SendMsg(FoxMes);//上传Mac Mini
 
-                        stop_time = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
-                        label38.Text = ((stop_time - start_time) / 1000).ToString("0.00");
-                        label36.Text = "CT:" + label38.Text + "S";
-
-                        stopTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
-                        SaveAndUploadPicture(Define.SN, cogRecordDisplay1.Image, "CCD1");
-                        SaveAndUploadPicture(Define.SN, cogRecordDisplay2.Image, "CCD2");
-                        while (!com232.StrBack.Contains(Define.气缸.Substring(2, 1) + " Off Pass!"))
-                        {
-                            Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升    
-                            Thread.Sleep(50);
-                        }
-
-                        GenerateMESData();
-                        ScanIOCard = true;
-                        Thread.Sleep(50);
-                        if (Define.SN.Length == intSNLength)
-                        {
-                            CL++;
-
-                            myIniFile.IniWriteValue("Startup", "LabelCL", CL.ToString());
-                            //ShowMsg3(FoxMes);
-                            if (Define.GapTR.ToString() != "999" && Define.GapSR.ToString() != "999")
+                            string str = "";
+                            FoxMes = "";
+                            if (macClient.ClientSocket.Connected && macClient.connectOk && macClient.TCPStatic)
                             {
-                                macClient.SN = Define.SN;
-                                macClient.SendMsg(FoxMes);//上传Mac Mini
-
-                                string str = "";
-                                FoxMes = "";
-                                if (macClient.ClientSocket.Connected && macClient.connectOk && macClient.TCPStatic)
+                                if (labelPassFail1.Text == "PASS")//视觉检测通过
                                 {
-                                    if (labelPassFail1.Text == "PASS")//视觉检测通过
+                                    mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";OK;";
+                                    //添加 抽检模式
+                                    if (button4.Text == "正常模式")
                                     {
-                                        mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";OK;";
-                                        //添加 抽检模式
-                                        if (button4.Text == "正常模式")
-                                        {
-                                            ConnMES(3, ref mesMsg);//上传MES
-                                            if (mesMsg.Contains("NG"))
-                                                MessageBox.Show("SFC上传信息失败：" + mesMsg);
-                                        }
-                                        else
-                                        {
-                                            ConnMES(48, ref mesMsg);
-                                        }
-                                        str = mesMsg;
-                                        SaveSNInner(Define.SN + "-P");
+                                        ConnMES(3, ref mesMsg);//上传MES
+                                        if (mesMsg.Contains("NG"))
+                                            MessageBox.Show("SFC上传信息失败：" + mesMsg);
                                     }
                                     else
                                     {
-                                        mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";NG;" + failmes;
-
-                                        //添加 抽检模式
-                                        if (button4.Text == "正常模式")
-                                        {
-                                            ConnMES(3, ref mesMsg);
-                                            if (mesMsg.Contains("NG"))
-                                                MessageBox.Show("SFC上传信息失败：" + mesMsg);
-                                        }
-                                        else
-                                        {
-                                            ConnMES(48, ref mesMsg);
-                                        }
-                                        str = mesMsg;
-                                        SaveSNInner(Define.SN);
+                                        ConnMES(48, ref mesMsg);
                                     }
-                                    AddToQueue(str, Color.Black);
-                                    richTextBox.ScrollToCaret();
-                                    Total();
+                                    str = mesMsg;
+                                    SaveSNInner(Define.SN + "-P");
                                 }
                                 else
                                 {
-                                    AddToQueue("Mac mini与SFC断连，请重新连接!", Color.Red);
-                                    richTextBox.ScrollToCaret();
-                                    labelPassFail1.Text = "mini Err";
-                                    labelPassFail1.BackColor = Color.Yellow;
+                                    mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";NG;" + failmes;
+
+                                    //添加 抽检模式
+                                    if (button4.Text == "正常模式")
+                                    {
+                                        ConnMES(3, ref mesMsg);
+                                        if (mesMsg.Contains("NG"))
+                                            MessageBox.Show("SFC上传信息失败：" + mesMsg);
+                                    }
+                                    else
+                                    {
+                                        ConnMES(48, ref mesMsg);
+                                    }
+                                    str = mesMsg;
+                                    SaveSNInner(Define.SN);
                                 }
+                                AddToQueue(str, Color.Black);
+                                richTextBox.ScrollToCaret();
+                                Total();
+                            }
+                            else
+                            {
+                                AddToQueue("Mac mini与SFC断连，请重新连接!", Color.Red);
+                                richTextBox.ScrollToCaret();
+                                labelPassFail1.Text = "mini Err";
+                                labelPassFail1.BackColor = Color.Yellow;
                             }
                         }
-
-                        bGetSN = false;
-                        SNtxtBox.Text = "";
-                        HoldSN = "";
-                        HoldSNtxtBox.Text = "";
-                        failmes = "";
                     }
+
+                    bGetSN = false;
+                    SNtxtBox.Text = "";
+                    HoldSN = "";
+                    HoldSNtxtBox.Text = "";
+                    failmes = "";
                 }
             }
         }
@@ -824,7 +826,7 @@ namespace MyTools
             }
         }
 
-        public void Run()
+        private void Run()
         {
             if (check200.Checked)
             { }
@@ -838,8 +840,11 @@ namespace MyTools
                     Define.sp1.Write("Cmd_On_" + Define.气缸 + "\r\n");
                     Thread.Sleep(50);
                 }
-                macClient.SN = Define.SN;
-                macClient.SendMsg("{\r\n" + Define.SN + "@sfc_unit_check\r\n}\r\n");
+                if (!bRunEmpty) // 不是空跑则上传Mac mini
+                {
+                    macClient.SN = Define.SN;
+                    macClient.SendMsg("{\r\n" + Define.SN + "@sfc_unit_check\r\n}\r\n");
+                }
                 Thread.Sleep(1200);
             }
 
@@ -1280,7 +1285,7 @@ namespace MyTools
                             ScanIOCard = false;
                             Define.DoubleButtonDown = true;
                             startTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                            start_time = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
+                            start_time_milli = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
                         }
                         else
                         {
@@ -1940,6 +1945,10 @@ namespace MyTools
             Define.sp1.Close();
             Define.sp2.Close();
             motion.SingleMotor.SetSevON(false);
+            Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
+            Define.sp1.Write("Cmd_Off_" + Define.黄灯 + "\r\n");
+            Define.sp1.Write("Cmd_Off_" + Define.绿灯 + "\r\n");
+            Define.sp1.Write("Cmd_Off_" + Define.蜂鸣 + "\r\n");
         }
 
         private void ChangePSW_Click(object sender, EventArgs e)
@@ -2037,13 +2046,15 @@ namespace MyTools
 
         private void DeletePhoto_Click(object sender, EventArgs e)
         {
-            if (DeletePhoto.BackColor == Color.LightGray)
+            if (!bDelPic)
             {
+                bDelPic = true;
                 myIniFile.IniWriteValue("Startup", "DelPic", "1");
                 DeletePhoto.BackColor = Color.LightGreen;
             }
             else
             {
+                bDelPic = false;
                 DeletePhoto.BackColor = Color.LightGray;
                 myIniFile.IniWriteValue("Startup", "DelPic", "0");
             }
@@ -2120,6 +2131,13 @@ namespace MyTools
         private void OpenPhotoBtn_Click_1(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(@"E:\Image");
+        }
+
+        private void button_RunEmpty_Click(object sender, EventArgs e)
+        {
+            bRunEmpty = !bRunEmpty;
+            button_RunEmpty.Text = bRunEmpty ? "停止空跑" : "启用空跑";
+            button_RunEmpty.BackColor = bRunEmpty ? Color.LightGreen : Color.LightGray;
         }
 
         string mesMsg = "";
