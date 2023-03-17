@@ -45,13 +45,13 @@ namespace MyTools
         double CL;
         bool pass = false;
         string strTime = "";
-        bool ScanIOCard = true;
-        bool DayOrNightRun = true;
+        volatile bool ScanIOCard = true;
         bool PingResult = false;
         int intSNLength = 12;
         bool Manual = false, Auto = false;
 
         bool bUploadPDCA = true;
+        bool bUploadMES = true;
         private Motion motion;
         private string version;
         private string strSNLength;
@@ -103,18 +103,6 @@ namespace MyTools
                 SaveMsg("VPP程序加载失败");
             }
 
-            try
-            {
-                MES.SajetTransStart();
-                AOIMethod.ViewImage(pictureBox5, pathpicture + "GreenOn2.bmp");
-            }
-            catch (System.Exception ex)
-            {
-                label28.Text = "S  F  C 不上传";
-                MES.SajetTransClose();
-                AOIMethod.ViewImage(pictureBox5, pathpicture + "Alarm.bmp");
-                MessageBox.Show(ex.Message);
-            }
             CheckForIllegalCrossThreadCalls = false; //不检查线程安全
 
             SNLength.Text = strSNLength;
@@ -160,7 +148,20 @@ namespace MyTools
                 AddToQueue("轴未使能！", Color.Red);
             }
 
-            OpenThread();//子线程开启            
+            try
+            {
+                MES.SajetTransStart();
+                AOIMethod.ViewImage(pictureBox5, pathpicture + "GreenOn2.bmp");
+            }
+            catch (System.Exception ex)
+            {
+                label_MesState.Text = "S  F  C 不上传";
+                MES.SajetTransClose();
+                AOIMethod.ViewImage(pictureBox5, pathpicture + "Alarm.bmp");
+                MessageBox.Show(ex.Message);
+            }
+
+            OpenThreads();//子线程开启            
 
             ParamInitialize.ReadSettings(this, Days, LogDays);
 
@@ -172,17 +173,21 @@ namespace MyTools
             if (myIniFile.IniReadValue("Startup", "OpenTime") == "0")
                 AutoClear.BackColor = Color.LightGray;
             else
-                AutoClear.BackColor = Color.LightGreen;
+                AutoClear.BackColor = Color.LawnGreen;
             groupBox13.Enabled = false;
             if (myIniFile.IniReadValue("Startup", "bc") == "0")
                 LoosenCh.Checked = false;
             else
                 LoosenCh.Checked = true;
             if (myIniFile.IniReadValue("Startup", "DelPic") == "1")
-                DeletePhoto.BackColor = Color.LightGreen;
+                DeletePhoto.BackColor = Color.LawnGreen;
             else
                 DeletePhoto.BackColor = Color.LightGray;
 
+            button_MES.Text = "禁用MES";
+            button_MES.BackColor = Color.LawnGreen;
+            button_PDCA.Text = "禁用PDCA";
+            button_PDCA.BackColor = Color.LawnGreen;
         }
 
         #endregion
@@ -316,7 +321,7 @@ namespace MyTools
             textBoxFAI_6_180.Text = Define.OffsetSL.ToString("0.000");
             textBoxFAI_6_270.Text = Define.OffsetTL.ToString("0.000");
 
-            if (richTextBox.Lines.Length > 250)
+            if (richTextBox.Lines.Length > 400)
             {
                 richTextBox.Clear();
             }
@@ -348,6 +353,43 @@ namespace MyTools
                     AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
                 }
             }
+
+            if (myIniFile.IniReadValue("Startup", "Statue") == "1")
+            {
+                label_LoginUser.Text = "操作员";
+            }
+            else if (myIniFile.IniReadValue("Startup", "Statue") == "2")
+            {
+                label_LoginUser.Text = "技术员";
+                if (Manual)
+                    groupBox13.Enabled = true;
+                else
+                    groupBox13.Enabled = false;
+            }
+            else if (myIniFile.IniReadValue("Startup", "Statue") == "3")
+            {
+                label_LoginUser.Text = "工程师";
+                if (Manual)
+                {
+                    groupBox10.Enabled = true;
+                    groupBox11.Enabled = true;
+                    groupBox13.Enabled = true;
+                    groupBox16.Enabled = true;
+                    groupBox3.Enabled = true;
+                    groupBox17.Enabled = true;
+                }
+                else
+                {
+                    groupBox10.Enabled = false;
+                    groupBox11.Enabled = false;
+                    groupBox13.Enabled = false;
+                    groupBox3.Enabled = false;
+                    groupBox16.Enabled = false;
+                    groupBox17.Enabled = false;
+                }
+            }
+
+            this.label_DateTime.Text = DateTime.Now.ToString();
         }
 
         private void RecodeTimeAndCheckPDCA()
@@ -381,14 +423,24 @@ namespace MyTools
                             try
                             {
                                 macClient.StopConnect();
-                                Thread.Sleep(500);
-
-                                macClient.Open("169.254.1.10", 1111);
-                                AddToQueue("Mac mini尝试重新连接！", Color.Black);
                             }
-                            catch
+                            catch { }
+                        }
+                        else
+                        {
+                            bool b_Connect = true;
+                            if (macClient != null)
                             {
-                                // ignored
+                                b_Connect = b_Connect && macClient.connectOk;
+                                if (macClient.ClientSocket != null)
+                                {
+                                    b_Connect = b_Connect && macClient.ClientSocket.Connected;
+                                }
+                                if (b_Connect != true)
+                                {
+                                    macClient.Open("169.254.1.10", 1111);
+                                    AddToQueue("Mac mini尝试重新连接！", Color.Black);
+                                }
                             }
                         }
                     }
@@ -416,48 +468,12 @@ namespace MyTools
                 Thread.Sleep(50);
                 try
                 {
-                    if (myIniFile.IniReadValue("Startup", "Statue") == "1")
-                    {
-                        label_LoginUser.Text = "操作员";
-                    }
-                    else if (myIniFile.IniReadValue("Startup", "Statue") == "2")
-                    {
-                        label_LoginUser.Text = "技术员";
-                        if (Manual)
-                            groupBox13.Enabled = true;
-                        else
-                            groupBox13.Enabled = false;
-                    }
-                    else if (myIniFile.IniReadValue("Startup", "Statue") == "3")
-                    {
-                        label_LoginUser.Text = "工程师";
-                        if (Manual)
-                        {
-                            groupBox10.Enabled = true;
-                            groupBox11.Enabled = true;
-                            groupBox13.Enabled = true;
-                            groupBox16.Enabled = true;
-                            groupBox3.Enabled = true;
-                            groupBox17.Enabled = true;
-                        }
-                        else
-                        {
-                            groupBox10.Enabled = false;
-                            groupBox11.Enabled = false;
-                            groupBox13.Enabled = false;
-                            groupBox3.Enabled = false;
-                            groupBox16.Enabled = false;
-                            groupBox17.Enabled = false;
-                        }
-                    }
-
-                    this.label_DateTime.Text = DateTime.Now.ToString();
                     if (ScanIOCard)
                     {
-                        Thread.Sleep(50);
                         Define.sp1.Write("Cmd_MCU_Sensor_Check\r\n");
                         Thread.Sleep(50);
                     }
+                    CheckEmergency();
 
                     if (LoosenCh.Checked)
                         myIniFile.IniWriteValue("Startup", "bc", "1");
@@ -465,7 +481,6 @@ namespace MyTools
                         myIniFile.IniWriteValue("Startup", "bc", "0");
 
                     sp1_DataHandle();
-                    CheckEmergency();
                     if (com232.m_bDataReceived)
                     {
                         sp2_DataHandle();
@@ -649,7 +664,7 @@ namespace MyTools
 
         #region 机台运行线程
 
-        public void OpenThread()
+        public void OpenThreads()
         {
             Task msgTask = new Task(ShowMessage);
             msgTask.Start();
@@ -664,6 +679,8 @@ namespace MyTools
             ThreadRunIO.Start();
         }
 
+
+
         private void ShowMessage()
         {
             while (true)
@@ -673,12 +690,12 @@ namespace MyTools
                 {
                     Dictionary<string, Color> dic;
                     MessageQueue.TryDequeue(out dic);
-                    Invoke((EventHandler)delegate
+                    richTextBox.Invoke(new Action(() =>
                     {
                         richTextBox.SelectionColor = dic.First().Value;
                         richTextBox.AppendText(DateTime.Now.ToString("MM-dd HH:mm:ss") + "  " + dic.First().Key + Environment.NewLine);
                         richTextBox.ScrollToCaret();
-                    });
+                    }));
                 }
             }
         }
@@ -709,10 +726,10 @@ namespace MyTools
             }
             else
             {
-                if (Define.BindingOK && Define.DoubleButtonDown && bReturned || bRunEmpty)
+                if ((Define.BindingOK || bRunEmpty) && Define.DoubleButtonDown && bReturned && !EmgAlarm)
                 {
-                    if (bRunEmpty) { AddToQueue("当前状态是空跑.............", Color.Red); }
-                    ScanIOCard = false;
+                    if (bRunEmpty) { AddToQueue("当前状态是空跑......", Color.Red); }
+                    //ScanIOCard = false;
                     Thread.Sleep(50);
                     Define.DoubleButtonDown = false;
                     if (check200.Checked)
@@ -723,6 +740,8 @@ namespace MyTools
                     {
                         Run();
                     }
+
+                    if (EmgAlarm) { return; }
                     Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升   
                     Thread.Sleep(50);
                     while (!com232.StrBack.Contains(Define.气缸.Substring(2, 1) + " Off Pass!"))
@@ -842,7 +861,7 @@ namespace MyTools
             { }
             else
             {
-
+                if (EmgAlarm) { return; }
                 Define.sp1.Write("Cmd_On_" + Define.气缸 + "\r\n");
                 Thread.Sleep(50);
                 while (!com232.StrBack.Contains(Define.气缸.Substring(2, 1) + " On Pass!"))
@@ -861,17 +880,28 @@ namespace MyTools
             Define.运行中 = true;
             Define.BindingOK = false;
 
+            if (EmgAlarm) { return; }
             VppRunFlow();
             for (int i = 0; i < motion.PointsArray.GetLength(0); i++)
             {
+                if (EmgAlarm) { return; }
                 if (motion.PointsArray[i, 0] == "1")
                 {
                     double pos = Convert.ToDouble(motion.PointsArray[i, 1]);
+                    Thread.Sleep(100);
                     motion.SingleMotor.AbsMove(pos, 65);
-                    while (motion.SingleMotor.GetPosition() - pos > 0.1)
+                    int times = 0;
+                    while (Math.Abs(motion.SingleMotor.GetPosition() - pos) > 0.1)
                     {
                         Thread.Sleep(100);
+                        if (++times > 15)
+                        {
+                            AddToQueue("轴运动超时！", Color.Red);
+                            break;
+                        }
                     }
+                    Thread.Sleep(100);
+
                     VppRunFlow();
                 }
             }
@@ -1130,7 +1160,7 @@ namespace MyTools
                 Define.NumberCSV++;
             }
 
-            if (but_PDCA.Text == "开启上传PDCA")   //添加判断 是否上传PDCA系统
+            if (button_PDCA.Text == "开启上传PDCA")   //添加判断 是否上传PDCA系统
             {
                 ToolDefine.SN = Define.SN;
                 ToolDefine.开始时间 = startTime;
@@ -1276,9 +1306,8 @@ namespace MyTools
         #region 串口1 IO板信息处理
 
         string ReadIOStatus = "";
-        string IOStatu = "1100000";
-        bool Alarm = false;
-        bool qigang = false;
+        volatile string IOStatu = "1100000";
+        bool EmgAlarm = false;
 
         public void sp1_DataHandle()
         {
@@ -1293,11 +1322,11 @@ namespace MyTools
                 {
                     IOStatu = ReadIOStatus;
                     string start = IOStatu.Substring(0, 3);
-                    if (Define.BindingOK)
+                    if (Define.BindingOK || bRunEmpty)
                     {
                         if (start == "000")
                         {
-                            ScanIOCard = false;
+                            //ScanIOCard = false;
                             Define.DoubleButtonDown = true;
                             startTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                             start_time_milli = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
@@ -1313,57 +1342,66 @@ namespace MyTools
 
         private void CheckEmergency()
         {
-
-            if (IOStatu.Substring(2, 1) == "1")
+            if (com232.StrBack.Substring(2, 1) == "1")
             {
-                if (!Alarm)
+                if (!EmgAlarm)
                 {
                     ScanIOCard = false;
-                    Thread.Sleep(50);
                     AddToQueue("急停被按下！", Color.Red);
-                    Alarm = true;
-                    if (ManualBtn.BackColor == Color.Green)
-                        ManualBtn.PerformClick();
-                    if (AutoBtn.BackColor == Color.Green)
-                        AutoBtn.PerformClick();
-                    ManualBtn.Enabled = false;
-                    AutoBtn.Enabled = false;
+                    EmgAlarm = true;
+                    bReturned = false;
+
+                    ManualBtn.Invoke(new MethodInvoker(delegate
+                    {
+                        if (ManualBtn.BackColor == Color.Green)
+                        {
+                            ManualBtn.PerformClick();
+                        }
+                        ManualBtn.Enabled = false;
+                    }));
+                    AutoBtn.Invoke(new MethodInvoker(delegate
+                    {
+                        if (AutoBtn.BackColor == Color.Green)
+                        {
+                            AutoBtn.PerformClick();
+                        }
+                        AutoBtn.Enabled = false;
+                    }));
 
                     Define.sp1.Write("Cmd_Off_" + Define.绿灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_On_" + Define.红灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_On_" + Define.蜂鸣 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_Off_" + Define.绿灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_On_" + Define.蜂鸣 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     ScanIOCard = true;
                 }
             }
             else
             {
-                if (Alarm)
+                if (EmgAlarm)
                 {
                     ScanIOCard = false;
-                    Thread.Sleep(50);
-                    Alarm = false;
+                    EmgAlarm = false;
                     AddToQueue("急停已复位！", Color.Black);
-                    ManualBtn.Enabled = true;
-                    AutoBtn.Enabled = true;
+                    ManualBtn.Invoke(new MethodInvoker(delegate { ManualBtn.Enabled = true; }));
+                    AutoBtn.Invoke(new MethodInvoker(delegate { AutoBtn.Enabled = true; }));
                     Define.sp1.Write("Cmd_On_" + Define.绿灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_Off_" + Define.蜂鸣 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_Off_" + Define.红灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_Off_" + Define.蜂鸣 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     Define.sp1.Write("Cmd_On_" + Define.绿灯 + "\r\n");
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                     ScanIOCard = true;
                 }
             }
@@ -1409,7 +1447,7 @@ namespace MyTools
                                 }
                                 catch (System.Exception ex)
                                 {
-                                    label28.Text = "S  F  C 掉线";
+                                    label_MesState.Text = "S  F  C 掉线";
                                     MES.SajetTransClose();
                                     AOIMethod.ViewImage(pictureBox5, pathpicture + "Alarm.bmp");
                                     MessageBox.Show(ex.Message);
@@ -1869,7 +1907,6 @@ namespace MyTools
 
         private void Production_Click(object sender, EventArgs e)
         {
-            DayOrNightRun = true;
             string str = "截止到" + DateTime.Now.ToString() + "\t共检测产品:" + total + "支," + "Pass支数:" + passtotal + ",复检率:" + totaldatalab.Text + "\r\n";//",Retry:" + label41.Text + 
             log.SaveTotalProduct("汇总", str);
             myIniFile.IniWriteValue("Startup", "LabelPD", "0");
@@ -1989,7 +2026,7 @@ namespace MyTools
             if (AutoClear.BackColor == Color.LightGray)
             {
                 myIniFile.IniWriteValue("Startup", "OpenTime", "1");
-                AutoClear.BackColor = Color.LightGreen;
+                AutoClear.BackColor = Color.LawnGreen;
             }
             else
             {
@@ -2027,25 +2064,25 @@ namespace MyTools
         /// <param name="e"></param>
         private void but_PDCA_Click(object sender, EventArgs e)
         {
-
             if (bUploadPDCA)
             {
-                but_PDCA.BackColor = Color.LawnGreen;
-                but_PDCA.Text = "关闭上传PDCA";
-                label_MacState.Text = "Mac mini 不上传";
+                button_PDCA.BackColor = Color.LightGray;
+                button_PDCA.Text = "启用PDCA";
+                label_MacState.Text = "Mac mini 上传";
                 AOIMethod.ViewImage(pictureBox4, pathpicture + "Alarm.bmp");
                 bUploadPDCA = false;
             }
             else
             {
-                but_PDCA.BackColor = Color.LightGray;
-                but_PDCA.Text = "开启上传PDCA";
-                label_MacState.Text = "Mac mini 上传";
+                button_PDCA.BackColor = Color.LawnGreen;
+                button_PDCA.Text = "禁用PDCA";
+                label_MacState.Text = "Mac mini 不上传";
                 AOIMethod.ViewImage(pictureBox4, pathpicture + "GreenOn2.bmp");
                 bUploadPDCA = true;
             }
 
         }
+
         private void button5_Click(object sender, EventArgs e)
         {
             bool a = int.TryParse(SNLength.Text, out intSNLength);
@@ -2075,7 +2112,7 @@ namespace MyTools
             {
                 bDelPic = true;
                 myIniFile.IniWriteValue("Startup", "DelPic", "1");
-                DeletePhoto.BackColor = Color.LightGreen;
+                DeletePhoto.BackColor = Color.LawnGreen;
             }
             else
             {
@@ -2095,7 +2132,7 @@ namespace MyTools
             }
             else
             {
-                SNInput.BackColor = Color.LightGreen;
+                SNInput.BackColor = Color.LawnGreen;
                 SNInput.Text = "手动输码";
                 bScanCode = false;
             }
@@ -2162,13 +2199,28 @@ namespace MyTools
         {
             bRunEmpty = !bRunEmpty;
             button_RunEmpty.Text = bRunEmpty ? "停止空跑" : "启用空跑";
-            button_RunEmpty.BackColor = bRunEmpty ? Color.LightGreen : Color.LightGray;
+            button_RunEmpty.BackColor = bRunEmpty ? Color.LawnGreen : Color.LightGray;
+        }
+
+        private void button_MES_Click(object sender, EventArgs e)
+        {
+            bUploadMES = !bUploadMES;
+            button_MES.Text = bUploadMES ? "禁用MES" : "启用MES";
+            button_MES.BackColor = bUploadMES ? Color.LawnGreen : Color.LightGray;
+            label_MesState.Text = bUploadMES ? "S  F  C 上传" : "S  F  C 不上传";
+            AOIMethod.ViewImage(pictureBox5, pathpicture + (bUploadMES ? "GreenOn2.bmp" : "Alarm.bmp"));
+            bool temp = bUploadMES ? MES.SajetTransStart() : MES.SajetTransClose();
         }
 
         string mesMsg = "";
 
         private void ConnMES(short cmd, ref string value)
         {
+            if (!bUploadMES)
+            {
+                return;
+            }
+
             int iLen, iCommand;
             string sData;
             int[] ailen;

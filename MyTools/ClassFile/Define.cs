@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using Cognex.VisionPro.ToolBlock;
 using Cognex.VisionPro;
 using System.IO.Ports;
@@ -21,8 +20,9 @@ namespace MyTools
         public static bool b_Sever2 = false;
         public static bool b_Client1 = false;//客户端通讯状态
         public static bool b_Client2 = false;
-        public static String UserName;//用户名
+        public static string UserName;//用户名
         public static string imagepath = "D:" + "\\" + "RawSave";
+
         /// <summary>
         /// IO串口
         /// </summary>
@@ -46,11 +46,10 @@ namespace MyTools
 
         public static double GapTL = 0, GapTR = 0, GapSL = 0, GapSR = 0, OffsetTL = 0, OffsetTR = 0, OffsetSL = 0, OffsetSR = 0;//测试结果
         public static double FOffset0 = 0, FOffset90 = 0, FOffset180 = 0, FOffset270 = 0, FOffsetMAX = 0;//CCD3测试结果
-        public static string timeS, timeE;
         public static double[] TopSettingS = new double[12];
         public static double[] SideSettingS = new double[12];
         public static double[] FrontSettingS = new double[14];
-        public static string SN;
+        public static string SN = string.Empty;
         public static double SNNum;
         public static int NumberCSV = 1;
 

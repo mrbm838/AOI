@@ -1,0 +1,28 @@
+2023-03-17 09:49:45  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.exe
+2023-03-17 09:49:45  [          ] Version : 1.0.0.0
+2023-03-17 09:49:45  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 09:49:45  [          ] (TCenter1.Create)Create Start
+2023-03-17 09:49:45  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 09:49:45  [          ] (TCenter1.Create)Create Over
+2023-03-17 09:49:45  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 09:54:14  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 09:54:14  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 09:54:14  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 09:54:14  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 09:54:14  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 09:54:14  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 09:54:14  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-17 09:54:53  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.exe
+2023-03-17 09:54:53  [          ] Version : 1.0.0.0
+2023-03-17 09:54:53  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 09:54:53  [          ] (TCenter1.Create)Create Start
+2023-03-17 09:54:53  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 09:54:53  [          ] (TCenter1.Create)Create Over
+2023-03-17 09:54:53  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 09:55:34  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 09:55:34  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 09:55:34  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 09:55:34  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 09:55:34  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 09:55:34  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 09:55:34  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over

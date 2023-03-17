@@ -1,0 +1,14 @@
+2023-03-17 16:18:25  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.exe
+2023-03-17 16:18:25  [          ] Version : 1.0.0.0
+2023-03-17 16:18:25  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 16:18:25  [          ] (TCenter1.Create)Create Start
+2023-03-17 16:18:25  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 16:18:25  [          ] (TCenter1.Create)Create Over
+2023-03-17 16:18:25  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 16:18:30  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 16:18:30  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 16:18:30  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 16:18:30  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 16:18:30  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 16:18:30  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 16:18:30  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over

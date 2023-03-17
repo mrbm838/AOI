@@ -1,0 +1,29 @@
+2023-03-17 10:04:08  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 10:04:08  [          ] Version : 14.0.23107.0
+2023-03-17 10:04:08  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 10:04:08  [          ] (TCenter1.Create)Create Start
+2023-03-17 10:04:08  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 10:04:08  [          ] (TCenter1.Create)Create Over
+2023-03-17 10:04:08  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 10:06:12  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 10:06:12  [          ] Version : 14.0.23107.0
+2023-03-17 10:06:12  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 10:06:12  [          ] (TCenter1.Create)Create Start
+2023-03-17 10:06:12  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 10:06:12  [          ] (TCenter1.Create)Create Over
+2023-03-17 10:06:12  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 10:06:35  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-17 10:06:35  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-17 10:06:35  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-17 10:06:35  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist
+2023-03-17 10:13:46  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 10:13:46  [          ] Version : 14.0.23107.0
+2023-03-17 10:13:46  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 10:13:46  [          ] (TCenter1.Create)Create Start
+2023-03-17 10:13:46  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 10:13:46  [          ] (TCenter1.Create)Create Over
+2023-03-17 10:13:46  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 10:14:19  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
+2023-03-17 10:14:19  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
+2023-03-17 10:14:19  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
+2023-03-17 10:14:19  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist

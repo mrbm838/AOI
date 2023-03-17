@@ -1,0 +1,70 @@
+2023-03-17 18:27:12  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 18:27:12  [          ] Version : 14.0.23107.0
+2023-03-17 18:27:12  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 18:27:12  [          ] (TCenter1.Create)Create Start
+2023-03-17 18:27:12  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 18:27:12  [          ] (TCenter1.Create)Create Over
+2023-03-17 18:27:12  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 18:27:24  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 18:27:24  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 18:27:24  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 18:27:24  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 18:27:24  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 18:27:24  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 18:27:24  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-17 18:39:04  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 18:39:04  [          ] Version : 14.0.23107.0
+2023-03-17 18:39:04  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 18:39:04  [          ] (TCenter1.Create)Create Start
+2023-03-17 18:39:04  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 18:39:04  [          ] (TCenter1.Create)Create Over
+2023-03-17 18:39:04  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 18:39:21  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 18:39:21  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 18:39:21  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 18:39:21  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 18:39:21  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 18:39:21  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 18:39:21  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-17 18:41:29  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 18:41:29  [          ] Version : 14.0.23107.0
+2023-03-17 18:41:29  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 18:41:29  [          ] (TCenter1.Create)Create Start
+2023-03-17 18:41:29  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 18:41:29  [          ] (TCenter1.Create)Create Over
+2023-03-17 18:41:29  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 18:41:43  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 18:41:43  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 18:41:43  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 18:41:43  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 18:41:43  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 18:41:43  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 18:41:43  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-17 18:46:51  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 18:46:51  [          ] Version : 14.0.23107.0
+2023-03-17 18:46:51  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 18:46:51  [          ] (TCenter1.Create)Create Start
+2023-03-17 18:46:51  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 18:46:51  [          ] (TCenter1.Create)Create Over
+2023-03-17 18:46:51  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 18:47:02  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 18:47:02  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 18:47:02  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 18:47:02  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 18:47:02  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 18:47:02  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 18:47:02  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
+2023-03-17 18:52:04  [          ] File    : D:\AOI_Reduce_Axis\MyTools\bin\x64\Debug\MyTools.vshost.exe
+2023-03-17 18:52:04  [          ] Version : 14.0.23107.0
+2023-03-17 18:52:04  [          ] (TCenter1.Create)Listen Port ÔOžé 6211
+2023-03-17 18:52:04  [          ] (TCenter1.Create)Create Start
+2023-03-17 18:52:04  [          ] (TThreadTCPServerPCClient.ServerSocketListen)TCP/IP Server Listening with :6211
+2023-03-17 18:52:04  [          ] (TCenter1.Create)Create Over
+2023-03-17 18:52:04  [          ] (SajetTransStartType)Function Execute Over
+2023-03-17 18:52:17  [          ] SajetTransClose±»ºô½Ð
+2023-03-17 18:52:17  [          ] (TCenter1.Destroy)Destroy Start
+2023-03-17 18:52:17  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Start
+2023-03-17 18:52:17  [          ] (TThreadTCPServerPCClient.Destroy)Cloes TCP/IP Server Over
+2023-03-17 18:52:17  [          ] (TCenter1.Destroy)Destroy Over
+2023-03-17 18:52:17  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Start
+2023-03-17 18:52:17  [          ] (TThreadTCPServerRsv.Destroy)Destroy Send Thread Over
