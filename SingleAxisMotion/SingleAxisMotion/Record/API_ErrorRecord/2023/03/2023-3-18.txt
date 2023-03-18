@@ -1,0 +1,3 @@
+2023/03/18	9:17:15	dllAPI : SetSevON  ,IMC_AxServoOff  Fail, NG_Code: 0x0323003c
+2023/03/18	9:29:50	dllAPI : SetSevON  ,IMC_AxServoOff  Fail, NG_Code: 0x0323003c
+2023/03/18	9:30:35	dllAPI : SetSevON  ,IMC_AxServoOff  Fail, NG_Code: 0x0323003c

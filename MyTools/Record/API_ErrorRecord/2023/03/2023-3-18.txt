@@ -1,0 +1,1 @@
+2023/03/18	9:09:26	dllAPI : SetSevON  ,IMC_AxServoOn  Fail, NG_Code: 0x0320003c

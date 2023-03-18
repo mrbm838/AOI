@@ -61,6 +61,7 @@ namespace MyTools
         private ConcurrentQueue<Dictionary<string, Color>> MessageQueue = new ConcurrentQueue<Dictionary<string, Color>>();
         private bool bDelPic;
         private bool bRunEmpty;
+        private bool bSampling;
 
         public MainForm()
         {
@@ -390,6 +391,7 @@ namespace MyTools
             }
 
             this.label_DateTime.Text = DateTime.Now.ToString();
+            
         }
 
         private void RecodeTimeAndCheckPDCA()
@@ -690,12 +692,12 @@ namespace MyTools
                 {
                     Dictionary<string, Color> dic;
                     MessageQueue.TryDequeue(out dic);
-                    richTextBox.Invoke(new Action(() =>
+                    richTextBox.BeginInvoke((EventHandler)delegate // new Action
                     {
                         richTextBox.SelectionColor = dic.First().Value;
                         richTextBox.AppendText(DateTime.Now.ToString("MM-dd HH:mm:ss") + "  " + dic.First().Key + Environment.NewLine);
                         richTextBox.ScrollToCaret();
-                    }));
+                    });
                 }
             }
         }
@@ -711,20 +713,20 @@ namespace MyTools
 
         private void Working()
         {
-            if (this.richTextBox.InvokeRequired)
-            {
-                FlushClient fc1 = new FlushClient(Working);
+            //if (this.labelPassFail1.InvokeRequired)
+            //{
+            //    FlushClient fc1 = new FlushClient(Working);
 
-                try//不加try，未断开连接前关闭软件会出异常
-                {
-                    this.Invoke(fc1);//通过代理调用刷新方法
-                }
-                catch
-                {
+            //    try//不加try，未断开连接前关闭软件会出异常
+            //    {
+            //        this.Invoke(fc1);//通过代理调用刷新方法
+            //    }
+            //    catch
+            //    {
 
-                }
-            }
-            else
+            //    }
+            //}
+            //else
             {
                 if ((Define.BindingOK || bRunEmpty) && Define.DoubleButtonDown && bReturned && !EmgAlarm)
                 {
@@ -732,14 +734,17 @@ namespace MyTools
                     //ScanIOCard = false;
                     Thread.Sleep(50);
                     Define.DoubleButtonDown = false;
-                    if (check200.Checked)
+                    check200.Invoke(new MethodInvoker(delegate
                     {
-                        RunToCheck200();
-                    }
-                    else
-                    {
-                        Run();
-                    }
+                        if (check200.Checked)
+                        {
+                            RunToCheck200();
+                        }
+                        else
+                        {
+                            Run();
+                        }
+                    }));
 
                     if (EmgAlarm) { return; }
                     Define.sp1.Write("Cmd_Off_" + Define.气缸 + "\r\n");//气缸上升   
@@ -751,14 +756,23 @@ namespace MyTools
                     }
 
                     stop_time_milli = DateTime.Now.Hour * 3600 * 1000 + DateTime.Now.Minute * 60 * 1000 + DateTime.Now.Second * 1000 + DateTime.Now.Millisecond;
-                    label_CT.Text = "CT:" + ((stop_time_milli - start_time_milli) / 1000).ToString("0.00") + "S";
+                    label_CT.Invoke(new MethodInvoker(delegate
+                    {
+                        label_CT.Text = "CT:" + ((stop_time_milli - start_time_milli) / 1000).ToString("0.00") + "S";
+                    }));
 
                     stopTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                    if (!bRunEmpty) // 不是空跑则保存并上传图片、生成MES信息
+                    //if (!bRunEmpty) // 不是空跑则保存并上传图片、生成MES信息
                     {
-                        SaveAndUploadPicture(Define.SN, cogRecordDisplay1.Image, "CCD1");
-                        SaveAndUploadPicture(Define.SN, cogRecordDisplay2.Image, "CCD2");
+                        cogRecordDisplay1.Invoke(new MethodInvoker(delegate
+                        {
+                            SaveAndUploadPicture(Define.SN, cogRecordDisplay1.Image, "CCD1");
+                        }));
+                        cogRecordDisplay2.Invoke(new MethodInvoker(delegate
+                        {
+                            SaveAndUploadPicture(Define.SN, cogRecordDisplay2.Image, "CCD2");
+                        }));
                         GenerateMESData();
                     }
 
@@ -769,8 +783,7 @@ namespace MyTools
                         CL++;
 
                         myIniFile.IniWriteValue("Startup", "LabelCL", CL.ToString());
-                        //ShowMsg3(FoxMes);
-                        if (Define.GapTR.ToString() != "999" && Define.GapSR.ToString() != "999")
+                        if (Define.GapTR.ToString() != "999" && Define.GapSR.ToString() != "999" && bUploadMES && bUploadPDCA)
                         {
                             macClient.SN = Define.SN;
                             macClient.SendMsg(FoxMes);//上传Mac Mini
@@ -779,15 +792,17 @@ namespace MyTools
                             FoxMes = "";
                             if (macClient.ClientSocket.Connected && macClient.connectOk && macClient.TCPStatic)
                             {
-                                if (labelPassFail1.Text == "PASS")//视觉检测通过
+                                if (this.pass)//视觉检测通过
                                 {
-                                    mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";OK;";
+                                    mesMsg = Define.UserName + ";" + Define.SN + ";OK;";
                                     //添加 抽检模式
-                                    if (button4.Text == "正常模式")
+                                    if (bSampling == false)
                                     {
                                         ConnMES(3, ref mesMsg);//上传MES
                                         if (mesMsg.Contains("NG"))
+                                        {
                                             MessageBox.Show("SFC上传信息失败：" + mesMsg);
+                                        }
                                     }
                                     else
                                     {
@@ -798,14 +813,16 @@ namespace MyTools
                                 }
                                 else
                                 {
-                                    mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";NG;" + failmes;
+                                    mesMsg = Define.UserName + ";" + Define.SN + ";NG;" + failmes;
 
                                     //添加 抽检模式
-                                    if (button4.Text == "正常模式")
+                                    if (bSampling == false)
                                     {
                                         ConnMES(3, ref mesMsg);
                                         if (mesMsg.Contains("NG"))
+                                        {
                                             MessageBox.Show("SFC上传信息失败：" + mesMsg);
+                                        }
                                     }
                                     else
                                     {
@@ -815,24 +832,34 @@ namespace MyTools
                                     SaveSNInner(Define.SN);
                                 }
                                 AddToQueue(str, Color.Black);
-                                richTextBox.ScrollToCaret();
                                 Total();
                             }
                             else
                             {
                                 AddToQueue("Mac mini与SFC断连，请重新连接!", Color.Red);
-                                richTextBox.ScrollToCaret();
-                                labelPassFail1.Text = "mini Err";
-                                labelPassFail1.BackColor = Color.Yellow;
+                                labelPassFail.Invoke(new MethodInvoker(delegate
+                                {
+                                    labelPassFail.Text = "mini Err";
+                                    labelPassFail.BackColor = Color.Yellow;
+                                }));
                             }
                         }
                     }
 
                     bGetSN = false;
-                    SNtxtBox.Text = "";
-                    HoldSN = "";
-                    HoldSNtxtBox.Text = "";
                     failmes = "";
+
+                    Define.SN = "";
+                    SNtxtBox.Invoke(new MethodInvoker(delegate
+                    {
+                        SNtxtBox.Text = "";
+                    }));
+
+                    HoldSN = "";
+                    HoldSNtxtBox.Invoke(new MethodInvoker(delegate
+                    {
+                        HoldSNtxtBox.Text = "";
+                    }));
                 }
             }
         }
@@ -902,6 +929,7 @@ namespace MyTools
                     }
                     Thread.Sleep(100);
 
+                    if (EmgAlarm) { return; }
                     VppRunFlow();
                 }
             }
@@ -1134,21 +1162,29 @@ namespace MyTools
 
             if (fails == "")
             {
-                labelPassFail1.Text = "PASS";
                 this.pass = true;
-                labelPassFail1.BackColor = Color.Green;
+                labelPassFail.Invoke(new MethodInvoker(delegate
+                {
+                    labelPassFail.Text = "PASS";
+                    labelPassFail.BackColor = Color.Green;
+                }));
             }
             else
             {
                 failmes = failmes.Substring(0, failmes.Length - 1) + ";";
                 this.pass = false;
-                labelPassFail1.Text = "FAIL";
-                labelPassFail1.BackColor = Color.Red;
+                labelPassFail.Invoke(new MethodInvoker(delegate
+                {
+                    labelPassFail.Text = "FAIL";
+                    labelPassFail.BackColor = Color.Red;
+                }));
             }
 
             if (File.Exists(datapath + DateTime.Now.ToString("yyyy-MM-dd") + "-Data.csv"))
             {
-                log.SaveCSV(Define.NumberCSV.ToString() + "," + DateTime.Now.ToString() + "," + SNtxtBox.Text + "," + labelPassFail1.Text + "," + fails + "," + Define.GapSR.ToString() + "," + Define.GapTR.ToString() + "," + Define.GapSL.ToString() + "," + Define.GapTL.ToString() + "," + Define.OffsetSR + "," + Define.OffsetTR + "," + Define.OffsetSL + "," + Define.OffsetTL, datapath + DateTime.Now.ToString("yyyy-MM-dd") + "-Data.csv");//FOffset0, FOffset90, FOffset180, FOffset270, FOffsetMAX;//CCD3测试结果
+                log.SaveCSV(Define.NumberCSV.ToString() + "," + DateTime.Now.ToString() + "," + Define.SN + "," + (this.pass ? "PASS" : "FAIL") + "," + fails + "," + 
+                    Define.GapSR.ToString() + "," + Define.GapTR.ToString() + "," + Define.GapSL.ToString() + "," + Define.GapTL.ToString() + "," + 
+                    Define.OffsetSR + "," + Define.OffsetTR + "," + Define.OffsetSL + "," + Define.OffsetTL, datapath + DateTime.Now.ToString("yyyy-MM-dd") + "-Data.csv");//FOffset0, FOffset90, FOffset180, FOffset270, FOffsetMAX;//CCD3测试结果
                 Define.NumberCSV++;
             }
             else
@@ -1156,11 +1192,13 @@ namespace MyTools
                 Define.NumberCSV = 1;
                 string title = "Number,time,SN,Rec,Fail,FAI5-0deg,FAI5-90deg,FAI5-180deg,FAI5-270deg,FAI6-0deg,FAI6-90deg,FAI6-180deg,FAI6-270deg";//,FAI6-0deg-CCD3,FAI6-90deg-CCD3,FAI6-180deg-CCD3,FAI6-270deg-CCD3,FAI6-MAX-CCD3
                 log.SaveCSV(title, datapath + DateTime.Now.ToString("yyyy-MM-dd") + "-Data.csv");
-                log.SaveCSV(Define.NumberCSV.ToString() + "," + DateTime.Now.ToString() + "," + SNtxtBox.Text + "," + labelPassFail1.Text + "," + fails + "," + Define.GapSR.ToString() + "," + Define.GapTR.ToString() + "," + Define.GapSL.ToString() + "," + Define.GapTL.ToString() + "," + Define.OffsetSR + "," + Define.OffsetTR + "," + Define.OffsetSL + "," + Define.OffsetTL, datapath + DateTime.Now.ToString("yyyy-MM-dd") + "-Data.csv");//FOffset0, FOffset90, FOffset180, FOffset270, FOffsetMAX;//CCD3测试结果
+                log.SaveCSV(Define.NumberCSV.ToString() + "," + DateTime.Now.ToString() + "," + Define.SN + "," + (this.pass ? "PASS" : "FAIL") + "," + fails + "," + 
+                    Define.GapSR.ToString() + "," + Define.GapTR.ToString() + "," + Define.GapSL.ToString() + "," + Define.GapTL.ToString() + "," + 
+                    Define.OffsetSR + "," + Define.OffsetTR + "," + Define.OffsetSL + "," + Define.OffsetTL, datapath + DateTime.Now.ToString("yyyy-MM-dd") + "-Data.csv");//FOffset0, FOffset90, FOffset180, FOffset270, FOffsetMAX;//CCD3测试结果
                 Define.NumberCSV++;
             }
 
-            if (button_PDCA.Text == "开启上传PDCA")   //添加判断 是否上传PDCA系统
+            if (bUploadPDCA)   //添加判断 是否上传PDCA系统
             {
                 ToolDefine.SN = Define.SN;
                 ToolDefine.开始时间 = startTime;
@@ -1418,8 +1456,8 @@ namespace MyTools
             {
                 this.Invoke(new MethodInvoker(delegate
                 {
-                    labelPassFail1.Text = "WAIT";
-                    labelPassFail1.BackColor = Color.YellowGreen;
+                    labelPassFail.Text = "WAIT";
+                    labelPassFail.BackColor = Color.YellowGreen;
                     com232.m_bDataReceived = false;
                     Define.DoubleButtonDown = false;
 
@@ -1431,6 +1469,10 @@ namespace MyTools
                             if (com232.strBackSN.Length == intSNLength)
                             {
                                 Define.SN = com232.strBackSN;
+                                //SNtxtBox.Invoke(new MethodInvoker(delegate
+                                //{
+                                    SNtxtBox.Text = Define.SN;
+                                //}));
                                 mesMsg = com232.strBackSN + ";";
                                 try
                                 {
@@ -1454,10 +1496,9 @@ namespace MyTools
                                 }
 
                                 AddToQueue("SN上传反馈信息：" + mesMsg, Color.Black);
-                                SNtxtBox.Text = com232.strBackSN;
                                 if (HoldSN != "")
                                 {
-                                    mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";" + HoldSN + ";";
+                                    mesMsg = Define.UserName + ";" + Define.SN + ";" + HoldSN + ";";
                                     ConnMES(51, ref mesMsg);
                                     if (mesMsg.Contains("OK") || mesMsg.Contains("DUP"))
                                         Define.BindingOK = true;
@@ -1472,7 +1513,7 @@ namespace MyTools
                                 HoldSN = com232.strBackSN;
                                 if (bGetSN)
                                 {
-                                    mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";" + HoldSN + ";";
+                                    mesMsg = Define.UserName + ";" + Define.SN + ";" + HoldSN + ";";
                                     ConnMES(51, ref mesMsg);
                                     if (mesMsg.Contains("OK") || mesMsg.Contains("DUP"))
                                         Define.BindingOK = true;
@@ -1519,7 +1560,7 @@ namespace MyTools
                         Thread.Sleep(50);
                         if (HoldSN.Length == 6 && SNtxtBox.Text.Length == intSNLength && bGetSN)
                         {
-                            mesMsg = OPtextbox.Text + ";" + SNtxtBox.Text + ";" + HoldSN + ";";
+                            mesMsg = Define.UserName + ";" + SNtxtBox.Text + ";" + HoldSN + ";";
                             ConnMES(51, ref mesMsg);
                             Define.BindingOK = true;
                             AddToQueue(mesMsg, Color.Black);
@@ -1530,11 +1571,8 @@ namespace MyTools
             else
             {
                 com232.strBackSN = "";
-                this.Invoke(new MethodInvoker(delegate
-                {
-                    AddToQueue("设备未启动", Color.Red);
-                    MessageBox.Show("请先启动自动模式！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                }));
+                AddToQueue("设备未启动", Color.Red);
+                MessageBox.Show("请先启动自动模式！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 com232.m_bDataReceived = false;
             }
             com232.strBackSN = "";
@@ -1551,6 +1589,7 @@ namespace MyTools
             LightInitialize.OPTCloseT();
             SaveMsg("CCD1拍照完成");
         }
+
         private void CCD2Btn_Click(object sender, EventArgs e)
         {
             LightInitialize.OPTOpenS();
@@ -1821,7 +1860,8 @@ namespace MyTools
 
             if (AutoBtn.BackColor == Color.LightGray && bReturned)
             {
-                mesMsg = OPtextbox.Text + ";";
+                Define.UserName = OPtextbox.Text;
+                mesMsg = Define.UserName + ";";
                 ConnMES(1, ref mesMsg);
                 string str = mesMsg;// client.command_code_for_webservice("192.168.112.161", 1, OPtextbox.Text + ";");
 
@@ -2041,20 +2081,20 @@ namespace MyTools
             myversion.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)//抽检模式
+        private void button_Sampling_Click(object sender, EventArgs e)//抽检模式
         {
-
-            if (button4.Text == "正常模式")
+            if (bSampling == false)
             {
-                button4.BackColor = Color.LawnGreen;
-                button4.Text = "抽检模式";
+                bSampling = true;
+                button_Sampling.BackColor = Color.LawnGreen;
+                button_Sampling.Text = "抽检模式";
             }
             else
             {
-                button4.BackColor = Color.LightGray;
-                button4.Text = "正常模式";
+                bSampling = false;
+                button_Sampling.BackColor = Color.LightGray;
+                button_Sampling.Text = "正常模式";
             }
-
         }
 
         /// <summary>

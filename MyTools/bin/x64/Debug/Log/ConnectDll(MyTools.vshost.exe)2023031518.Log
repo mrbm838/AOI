@@ -1,4 +1,0 @@
-2023-03-15 18:48:09  [          ] (SajetTransferData)Function Execute Start [P:4][C:1][L:1][Data:3B-]
-2023-03-15 18:48:09  [          ] (SajetTransferData)Command Data - ¡¾1¡¿;
-2023-03-15 18:48:09  [ERROR     ] (TThreadTCPServerPCClient.sendDataToRemote)Remote Server Not Exist
-2023-03-15 18:48:09  [WARRING   ] (SajetTransferData)Command Result - ¡¾NG¡¿¡¾1¡¿Remote Server Not Exist

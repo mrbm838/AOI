@@ -79,7 +79,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelPassFail1 = new System.Windows.Forms.Label();
+            this.labelPassFail = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.ExitLabel = new System.Windows.Forms.Label();
             this.ChangeUserLabel = new System.Windows.Forms.Label();
@@ -139,7 +139,7 @@
             this.button_RunEmpty = new System.Windows.Forms.Button();
             this.Button_OpenAxisForm = new System.Windows.Forms.Button();
             this.button_PDCA = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_Sampling = new System.Windows.Forms.Button();
             this.DeletePhoto = new System.Windows.Forms.Button();
             this.LoosenCh = new System.Windows.Forms.CheckBox();
             this.OpenPhotoBtn = new System.Windows.Forms.Button();
@@ -396,7 +396,7 @@
             // Timer_FlashValue
             // 
             this.Timer_FlashValue.Enabled = true;
-            this.Timer_FlashValue.Interval = 200;
+            this.Timer_FlashValue.Interval = 50;
             this.Timer_FlashValue.Tick += new System.EventHandler(this.Timer_FlashValue_Tick);
             // 
             // groupBox2
@@ -425,6 +425,8 @@
             // 
             // richTextBox
             // 
+            this.richTextBox.BackColor = System.Drawing.Color.LightGray;
+            this.richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.richTextBox.Location = new System.Drawing.Point(2, 16);
@@ -823,7 +825,7 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.labelPassFail1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.labelPassFail, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 16);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -832,18 +834,18 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(295, 200);
             this.tableLayoutPanel3.TabIndex = 30;
             // 
-            // labelPassFail1
+            // labelPassFail
             // 
-            this.labelPassFail1.AutoSize = true;
-            this.labelPassFail1.BackColor = System.Drawing.Color.Cornsilk;
-            this.labelPassFail1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPassFail1.Font = new System.Drawing.Font("宋体", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelPassFail1.Location = new System.Drawing.Point(3, 0);
-            this.labelPassFail1.Name = "labelPassFail1";
-            this.labelPassFail1.Size = new System.Drawing.Size(289, 200);
-            this.labelPassFail1.TabIndex = 17;
-            this.labelPassFail1.Text = "WAIT";
-            this.labelPassFail1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPassFail.AutoSize = true;
+            this.labelPassFail.BackColor = System.Drawing.Color.Cornsilk;
+            this.labelPassFail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelPassFail.Font = new System.Drawing.Font("宋体", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelPassFail.Location = new System.Drawing.Point(3, 0);
+            this.labelPassFail.Name = "labelPassFail";
+            this.labelPassFail.Size = new System.Drawing.Size(289, 200);
+            this.labelPassFail.TabIndex = 17;
+            this.labelPassFail.Text = "WAIT";
+            this.labelPassFail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox12
             // 
@@ -1443,7 +1445,7 @@
             this.groupBox13.Controls.Add(this.button_RunEmpty);
             this.groupBox13.Controls.Add(this.Button_OpenAxisForm);
             this.groupBox13.Controls.Add(this.button_PDCA);
-            this.groupBox13.Controls.Add(this.button4);
+            this.groupBox13.Controls.Add(this.button_Sampling);
             this.groupBox13.Controls.Add(this.DeletePhoto);
             this.groupBox13.Controls.Add(this.LoosenCh);
             this.groupBox13.Controls.Add(this.OpenPhotoBtn);
@@ -1515,16 +1517,16 @@
             this.button_PDCA.UseVisualStyleBackColor = true;
             this.button_PDCA.Click += new System.EventHandler(this.but_PDCA_Click);
             // 
-            // button4
+            // button_Sampling
             // 
-            this.button4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(15, 181);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 33);
-            this.button4.TabIndex = 104;
-            this.button4.Text = "正常模式";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button_Sampling.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Sampling.Location = new System.Drawing.Point(15, 181);
+            this.button_Sampling.Name = "button_Sampling";
+            this.button_Sampling.Size = new System.Drawing.Size(98, 33);
+            this.button_Sampling.TabIndex = 104;
+            this.button_Sampling.Text = "正常模式";
+            this.button_Sampling.UseVisualStyleBackColor = true;
+            this.button_Sampling.Click += new System.EventHandler(this.button_Sampling_Click);
             // 
             // DeletePhoto
             // 
@@ -2694,7 +2696,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label labelPassFail1;
+        private System.Windows.Forms.Label labelPassFail;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.Label ExitLabel;
         private System.Windows.Forms.Label ChangeUserLabel;
@@ -2751,7 +2753,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Button button_PDCA;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_Sampling;
         private System.Windows.Forms.Button DeletePhoto;
         private System.Windows.Forms.CheckBox LoosenCh;
         private System.Windows.Forms.Button OpenPhotoBtn;

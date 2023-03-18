@@ -55,7 +55,7 @@ namespace SingleAxisMotion
         private void Timer_Tick(object sender, EventArgs e)
         {
             Label_CurPos.Text = _motion.SingleMotor.GetPosition().ToString();
-            if (_motion.IsMotorServoOn)
+            if (_motion.IsMotorServoOn) // _motion.SingleAxis.IsSerOn
             {
                 Button_Servo.Text = "关使能";
                 Button_Servo.BackColor = Color.Lime;
